@@ -2,9 +2,10 @@ package core
 
 import (
 	"encoding/json"
+	"strconv"
+
 	rpctypes "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
 	tracksTypes "github.com/airchains-network/tracksbft/types/tracks"
-	"strconv"
 )
 
 func TracksGetPodCount(_ *rpctypes.Context) (int, error) {

@@ -272,6 +272,7 @@ func createAndStartIndexerService(
 	dbProvider DBProvider,
 	eventBus *types.EventBus,
 	logger log.Logger,
+	stationType string,
 ) (*txindex.IndexerService, txindex.TxIndexer, indexer.BlockIndexer, error) {
 	var (
 		txIndexer    txindex.TxIndexer
@@ -304,7 +305,7 @@ func createAndStartIndexerService(
 		blockIndexer = &blockidxnull.BlockerIndexer{}
 	}
 
-	indexerService := txindex.NewIndexerService(txIndexer, blockIndexer, eventBus, false)
+	indexerService := txindex.NewIndexerService(txIndexer, blockIndexer, eventBus, stationType, false)
 	indexerService.SetLogger(logger.With("module", "txindex"))
 
 	if err := indexerService.Start(); err != nil {
@@ -744,8 +745,11 @@ func NewNode(config *cfg.Config,
 		return nil, err
 	}
 
+	// tracks type
+	stationType := config.RPC.TrackStationType // evm / cosmwasm / svm
+
 	indexerService, txIndexer, blockIndexer, err := createAndStartIndexerService(config,
-		genDoc.ChainID, dbProvider, eventBus, logger)
+		genDoc.ChainID, dbProvider, eventBus, logger, stationType)
 	if err != nil {
 		return nil, err
 	}

@@ -32,7 +32,7 @@ func (txi *TxIndex) Index(result *abci.TxResult) error {
 func (txi *TxIndex) Search(ctx context.Context, q *query.Query) ([]*abci.TxResult, error) {
 	return []*abci.TxResult{}, nil
 }
-func (txi *TxIndex) AddPod(b *txindex.Batch) error { // , client cosmosclient.Client, registry cosmosaccount.Registry, account cosmosaccount.Account
+func (txi *TxIndex) AddPod(b *txindex.Batch, stationType string) error { // , client cosmosclient.Client, registry cosmosaccount.Registry, account cosmosaccount.Account
 	//TODO implement me
 	panic("implement me")
 }

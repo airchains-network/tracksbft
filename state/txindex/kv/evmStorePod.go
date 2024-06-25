@@ -3,10 +3,11 @@ package kv
 import (
 	"encoding/json"
 	"fmt"
+	"strconv"
+
 	abci "github.com/airchains-network/tracksbft/abci/types"
 	txindex "github.com/airchains-network/tracksbft/state/txindex"
 	tracksTypes "github.com/airchains-network/tracksbft/types/tracks"
-	"strconv"
 )
 
 func extractAttribute(attributes []abci.EventAttribute, key string) string {
@@ -98,13 +99,13 @@ func StorePod(txi *TxIndex, b *txindex.Batch) error {
 			}
 
 			previousBlockHeight := result.Height - 1
-			fromBalance, err = getBalanceAtHeight(sender, previousBlockHeight)
+			fromBalance, err = GetBalanceAtHeight(sender, previousBlockHeight)
 			if err != nil {
 				fmt.Println("Error checking sender balance:", err)
 				return err
 			}
 
-			toBalance, err = getBalanceAtHeight(recipient, previousBlockHeight)
+			toBalance, err = GetBalanceAtHeight(recipient, previousBlockHeight)
 			if err != nil {
 				fmt.Println("Error checking recipient balance:", err)
 				return err

@@ -75,7 +75,7 @@ that code.
 *Feb 27, 2023*
 
 This is the first official release of CometBFT - a fork of [Tendermint
-Core](https://github.com/airchains-network/tracksbft). This particular release is
+Core](https://github.com/tendermint/tendermint). This particular release is
 intended to be compatible with the Tendermint Core v0.34 release series.
 
 For details as to how to upgrade to CometBFT from Tendermint Core, please see
@@ -118,7 +118,7 @@ to this release!
   send messages, as opposed to the blocking `SendEnvelope` method. It is unclear
   whether this has a meaningful impact on P2P performance, but this patch does
   correct the underlying behaviour to what it should be
-  ([tendermint/tendermint\#9936](https://github.com/airchains-network/tracksbft/pull/9936))
+  ([tendermint/tendermint\#9936](https://github.com/tendermint/tendermint/pull/9936))
 
 ### DEPENDENCIES
 
@@ -128,19 +128,19 @@ to this release!
 - Bump tm-load-test to v1.3.0 to remove implicit dependency on Tendermint Core
   ([\#165](https://github.com/cometbft/cometbft/pull/165))
 - `[crypto]` Update to use btcec v2 and the latest btcutil
-  ([tendermint/tendermint\#9787](https://github.com/airchains-network/tracksbft/pull/9787):
+  ([tendermint/tendermint\#9787](https://github.com/tendermint/tendermint/pull/9787):
   @wcsiu)
 
 ### FEATURES
 
 - `[rpc]` Add `match_event` query parameter to indicate to the RPC that it
   should match events _within_ attributes, not only within a height
-  ([tendermint/tendermint\#9759](https://github.com/airchains-network/tracksbft/pull/9759))
+  ([tendermint/tendermint\#9759](https://github.com/tendermint/tendermint/pull/9759))
 
 ### IMPROVEMENTS
 
 - `[e2e]` Add functionality for uncoordinated (minor) upgrades
-  ([\#56](https://github.com/airchains-network/tracksbft/pull/56))
+  ([\#56](https://github.com/tendermint/tendermint/pull/56))
 - `[tools/tm-signer-harness]` Remove the folder as it is unused
   ([\#136](https://github.com/cometbft/cometbft/issues/136))
 - Append the commit hash to the version of CometBFT being built
@@ -151,22 +151,22 @@ to this release!
 - `[consensus]` Add `consensus_block_gossip_parts_received` and
   `consensus_step_duration_seconds` metrics in order to aid in investigating the
   impact of database compaction on consensus performance
-  ([tendermint/tendermint\#9733](https://github.com/airchains-network/tracksbft/pull/9733))
+  ([tendermint/tendermint\#9733](https://github.com/tendermint/tendermint/pull/9733))
 - `[state/kvindexer]` Add `match.event` keyword to support condition evaluation
   based on the event the attributes belong to
-  ([tendermint/tendermint\#9759](https://github.com/airchains-network/tracksbft/pull/9759))
+  ([tendermint/tendermint\#9759](https://github.com/tendermint/tendermint/pull/9759))
 - `[p2p]` Reduce log spam through reducing log level of "Dialing peer" and
   "Added peer" messages from info to debug
-  ([tendermint/tendermint\#9764](https://github.com/airchains-network/tracksbft/pull/9764):
+  ([tendermint/tendermint\#9764](https://github.com/tendermint/tendermint/pull/9764):
   @faddat)
 - `[consensus]` Reduce bandwidth consumption of consensus votes by roughly 50%
   through fixing a small logic bug
-  ([tendermint/tendermint\#9776](https://github.com/airchains-network/tracksbft/pull/9776))
+  ([tendermint/tendermint\#9776](https://github.com/tendermint/tendermint/pull/9776))
 
 ---
 
 CometBFT is a fork of [Tendermint
-Core](https://github.com/airchains-network/tracksbft) as of late December 2022.
+Core](https://github.com/tendermint/tendermint) as of late December 2022.
 
 ## Bug bounty
 
@@ -176,5 +176,5 @@ Friendly reminder, we have a [bug bounty program](https://hackerone.com/cosmos).
 
 For changes released before the creation of CometBFT, please refer to the
 Tendermint Core
-[CHANGELOG.md](https://github.com/airchains-network/tracksbft/blob/a9feb1c023e172b542c972605311af83b777855b/CHANGELOG.md).
+[CHANGELOG.md](https://github.com/tendermint/tendermint/blob/a9feb1c023e172b542c972605311af83b777855b/CHANGELOG.md).
 

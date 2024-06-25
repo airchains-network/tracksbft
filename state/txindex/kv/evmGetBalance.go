@@ -21,7 +21,8 @@ func init() {
 		log.Fatalf("Failed to connect to the Ethereum client: %v", err)
 	}
 }
-func getBalanceAtHeight(address string, height int64) (string, error) {
+
+func GetBalanceAtHeight(address string, height int64) (string, error) {
 	account := common.HexToAddress(address)
 	heightBigInt := big.NewInt(0).SetInt64(height) // *big.Int representation
 

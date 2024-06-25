@@ -25,13 +25,18 @@ type IndexerService struct {
 	terminateOnError bool
 }
 
+var tracksStationType string
+
 // NewIndexerService returns a new service instance.
 func NewIndexerService(
 	txIdxr TxIndexer,
 	blockIdxr indexer.BlockIndexer,
 	eventBus *types.EventBus,
+	stationType string,
 	terminateOnError bool,
 ) *IndexerService {
+
+	tracksStationType = stationType
 
 	is := &IndexerService{txIdxr: txIdxr, blockIdxr: blockIdxr, eventBus: eventBus, terminateOnError: terminateOnError}
 	is.BaseService = *service.NewBaseService(nil, "IndexerService", is)
@@ -56,6 +61,8 @@ func (is *IndexerService) OnStart() error {
 	if err != nil {
 		return err
 	}
+
+	is.Logger.Info("tracks pods are enabled", "tracksStationType", tracksStationType)
 
 	go func() {
 		for {
@@ -111,7 +118,7 @@ func (is *IndexerService) OnStart() error {
 			}
 
 			// index pods in database
-			if err = is.txIdxr.AddPod(batch); err != nil {
+			if err = is.txIdxr.AddPod(batch, tracksStationType); err != nil {
 				is.Logger.Error("failed to index block txs", "height", height, "err", err)
 				if is.terminateOnError {
 					if err := is.Stop(); err != nil {

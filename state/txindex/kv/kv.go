@@ -118,26 +118,28 @@ func (txi *TxIndex) AddBatch(b *txindex.Batch) error {
 	return storeBatch.WriteSync()
 }
 
-func (txi *TxIndex) AddPod(b *txindex.Batch) error {
+func (txi *TxIndex) AddPod(b *txindex.Batch, stationType string) error {
 
-	// initiate all databases required to make pods if its the first time
-	byteRes, err := txi.store.Get([]byte("countTxs"))
-	if err != nil {
-		return err
-	}
-
-	if byteRes == nil {
-		err = InitiateDatabaseForPods(txi)
+	if stationType == "evm" {
+		// initiate all databases required to make pods if its the first time
+		byteRes, err := txi.store.Get([]byte("countTxs"))
 		if err != nil {
 			return err
 		}
-	}
 
-	// store pod in db
-	err = StorePod(txi, b) // , client, registry, account)
-	if err != nil {
-		fmt.Println(err)
-		return err
+		if byteRes == nil {
+			err = InitiateDatabaseForPods(txi)
+			if err != nil {
+				return err
+			}
+		}
+
+		// store pod in db
+		err = StorePod(txi, b) // , client, registry, account)
+		if err != nil {
+			fmt.Println(err)
+			return err
+		}
 	}
 
 	return nil
