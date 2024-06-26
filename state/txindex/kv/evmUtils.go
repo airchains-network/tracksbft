@@ -14,6 +14,8 @@ const (
 )
 
 func InitiateDatabaseForPods(txi *TxIndex) error {
+
+	fmt.Println("lets test what is this means")
 	err := txi.store.Set([]byte(CounterTxsKey), []byte("0"))
 	if err != nil {
 		fmt.Println("Error initializing countTxs:", err)

@@ -37,7 +37,7 @@ type BlockStore struct {
 	// fine-grained concurrency control for its data, and thus this mutex does not apply to
 	// database contents. The only reason for keeping these fields in the struct is that the data
 	// can't efficiently be queried from the database since the key encoding we use is not
-	// lexicographically ordered (see https://github.com/airchains-network/tracksbft/issues/4567).
+	// lexicographically ordered (see https:// github.com/airchains-network/tracksbft/issues/4567).
 	mtx    cmtsync.RWMutex
 	base   int64
 	height int64

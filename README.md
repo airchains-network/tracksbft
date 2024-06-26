@@ -14,7 +14,7 @@ You can find more information about the Switchyard blockchain [here](https://git
 To use this project as a library in your blockchain project, update the `go.mod` file as follows:
 
 ```go
-github.com/tendermint/tendermint => github.com/tendermint/tendermint v0.0.1
+github.com/tendermint/tendermint => github.com/airchains-network/tracksbft v0.0.1
 ```
 
 Alternatively, you can run the following command and then replace all `tendermint/cometbft` library imports in your blockchain project with `tracksbft`:

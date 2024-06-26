@@ -11,7 +11,6 @@ import (
 	"github.com/Masterminds/semver"
 	e2e "github.com/airchains-network/tracksbft/test/e2e/pkg"
 	"github.com/airchains-network/tracksbft/version"
-	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing/object"
 )
 
@@ -34,7 +33,7 @@ var (
 	// The following specify randomly chosen values for testnet nodes.
 	nodeDatabases = uniformChoice{"goleveldb", "cleveldb", "rocksdb", "boltdb", "badgerdb"}
 	ipv6          = uniformChoice{false, true}
-	// FIXME: grpc disabled due to https://github.com/airchains-network/tracksbft/issues/5439
+	// FIXME: grpc disabled due to https:// github.com/airchains-network/tracksbft/issues/5439
 	nodeABCIProtocols    = uniformChoice{"unix", "tcp", "builtin"} // "grpc"
 	nodePrivvalProtocols = uniformChoice{"file", "unix", "tcp"}
 	// FIXME: v2 disabled due to flake
@@ -54,7 +53,7 @@ var (
 	nodeMisbehaviors = weightedChoice{
 		// FIXME: evidence disabled due to node panicking when not
 		// having sufficient block history to process evidence.
-		// https://github.com/airchains-network/tracksbft/issues/5617
+		// https:// github.com/airchains-network/tracksbft/issues/5617
 		// misbehaviorOption{"double-prevote"}: 1,
 		misbehaviorOption{}: 9,
 	}

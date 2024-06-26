@@ -3,8 +3,6 @@ package state
 import (
 	"errors"
 	"fmt"
-	"time"
-
 	abci "github.com/airchains-network/tracksbft/abci/types"
 	cryptoenc "github.com/airchains-network/tracksbft/crypto/encoding"
 	"github.com/airchains-network/tracksbft/libs/fail"
@@ -14,6 +12,7 @@ import (
 	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
 	"github.com/airchains-network/tracksbft/proxy"
 	"github.com/airchains-network/tracksbft/types"
+	"time"
 )
 
 //-----------------------------------------------------------------------------

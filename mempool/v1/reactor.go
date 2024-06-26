@@ -260,7 +260,7 @@ func (memR *Reactor) broadcastTxRoutine(peer p2p.Peer) {
 		}
 
 		// NOTE: Transaction batching was disabled due to
-		// https://github.com/airchains-network/tracksbft/issues/5796
+		// https:// github.com/airchains-network/tracksbft/issues/5796
 		if !memTx.HasPeer(peerID) {
 			success := p2p.SendEnvelopeShim(peer, p2p.Envelope{ //nolint: staticcheck
 				ChannelID: mempool.MempoolChannel,
