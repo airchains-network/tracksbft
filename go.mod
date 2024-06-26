@@ -1,4 +1,4 @@
-module github.com/tendermint/tendermint
+module github.com/airchains-network/tracksbft
 
 go 1.19
 
