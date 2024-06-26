@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"reflect"
 
-	cmtbytes "github.com/airchains-network/tracksbft/libs/bytes"
-	cmtstrings "github.com/airchains-network/tracksbft/libs/strings"
-	tmp2p "github.com/airchains-network/tracksbft/proto/tendermint/p2p"
-	"github.com/airchains-network/tracksbft/version"
+	cmtbytes "github.com/tendermint/tendermint/libs/bytes"
+	cmtstrings "github.com/tendermint/tendermint/libs/strings"
+	tmp2p "github.com/tendermint/tendermint/proto/tendermint/p2p"
+	"github.com/tendermint/tendermint/version"
 )
 
 const (

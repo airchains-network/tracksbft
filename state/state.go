@@ -9,12 +9,12 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	cmtstate "github.com/airchains-network/tracksbft/proto/tendermint/state"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	cmtversion "github.com/airchains-network/tracksbft/proto/tendermint/version"
-	"github.com/airchains-network/tracksbft/types"
-	cmttime "github.com/airchains-network/tracksbft/types/time"
-	"github.com/airchains-network/tracksbft/version"
+	cmtstate "github.com/tendermint/tendermint/proto/tendermint/state"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	cmtversion "github.com/tendermint/tendermint/proto/tendermint/version"
+	"github.com/tendermint/tendermint/types"
+	cmttime "github.com/tendermint/tendermint/types/time"
+	"github.com/tendermint/tendermint/version"
 )
 
 // database key

@@ -10,11 +10,11 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/airchains-network/tracksbft/abci/types"
-	cmtnet "github.com/airchains-network/tracksbft/libs/net"
-	"github.com/airchains-network/tracksbft/libs/service"
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
-	"github.com/airchains-network/tracksbft/libs/timer"
+	"github.com/tendermint/tendermint/abci/types"
+	cmtnet "github.com/tendermint/tendermint/libs/net"
+	"github.com/tendermint/tendermint/libs/service"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
+	"github.com/tendermint/tendermint/libs/timer"
 )
 
 const (

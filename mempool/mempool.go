@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"math"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 const (

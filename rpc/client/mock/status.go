@@ -3,8 +3,8 @@ package mock
 import (
 	"context"
 
-	"github.com/airchains-network/tracksbft/rpc/client"
-	ctypes "github.com/airchains-network/tracksbft/rpc/core/types"
+	"github.com/tendermint/tendermint/rpc/client"
+	ctypes "github.com/tendermint/tendermint/rpc/core/types"
 )
 
 // StatusMock returns the result specified by the Call

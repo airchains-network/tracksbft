@@ -8,8 +8,8 @@ import (
 	"github.com/gorilla/websocket"
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/tracksbft/libs/log"
-	types "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
+	"github.com/tendermint/tendermint/libs/log"
+	types "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 )
 
 func TestWebsocketManagerHandler(t *testing.T) {

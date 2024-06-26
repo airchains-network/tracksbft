@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/crypto"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 // RetrySignerClient wraps SignerClient adding retry for each operation (except

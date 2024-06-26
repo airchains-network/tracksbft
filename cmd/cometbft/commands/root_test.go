@@ -12,9 +12,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	cfg "github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/libs/cli"
-	cmtos "github.com/airchains-network/tracksbft/libs/os"
+	cfg "github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/libs/cli"
+	cmtos "github.com/tendermint/tendermint/libs/os"
 )
 
 var defaultRoot = os.ExpandEnv("$HOME/.some/test/dir")

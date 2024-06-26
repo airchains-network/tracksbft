@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/airchains-network/tracksbft/libs/bytes"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/libs/bytes"
+	"github.com/tendermint/tendermint/types"
 )
 
 //-----------------------------------------------------------------------------

@@ -3,8 +3,8 @@ package indexer
 import (
 	"context"
 
-	"github.com/airchains-network/tracksbft/libs/pubsub/query"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/libs/pubsub/query"
+	"github.com/tendermint/tendermint/types"
 )
 
 //go:generate ../../scripts/mockery_generate.sh BlockIndexer

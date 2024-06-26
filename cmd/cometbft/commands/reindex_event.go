@@ -8,16 +8,16 @@ import (
 	dbm "github.com/cometbft/cometbft-db"
 	"github.com/spf13/cobra"
 
-	abcitypes "github.com/airchains-network/tracksbft/abci/types"
-	cmtcfg "github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/libs/progressbar"
-	"github.com/airchains-network/tracksbft/state"
-	"github.com/airchains-network/tracksbft/state/indexer"
-	blockidxkv "github.com/airchains-network/tracksbft/state/indexer/block/kv"
-	"github.com/airchains-network/tracksbft/state/indexer/sink/psql"
-	"github.com/airchains-network/tracksbft/state/txindex"
-	"github.com/airchains-network/tracksbft/state/txindex/kv"
-	"github.com/airchains-network/tracksbft/types"
+	abcitypes "github.com/tendermint/tendermint/abci/types"
+	cmtcfg "github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/libs/progressbar"
+	"github.com/tendermint/tendermint/state"
+	"github.com/tendermint/tendermint/state/indexer"
+	blockidxkv "github.com/tendermint/tendermint/state/indexer/block/kv"
+	"github.com/tendermint/tendermint/state/indexer/sink/psql"
+	"github.com/tendermint/tendermint/state/txindex"
+	"github.com/tendermint/tendermint/state/txindex/kv"
+	"github.com/tendermint/tendermint/types"
 )
 
 const (

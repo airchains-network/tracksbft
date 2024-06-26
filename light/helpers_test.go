@@ -3,14 +3,14 @@ package light_test
 import (
 	"time"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	"github.com/airchains-network/tracksbft/crypto/ed25519"
-	"github.com/airchains-network/tracksbft/crypto/tmhash"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	cmtversion "github.com/airchains-network/tracksbft/proto/tendermint/version"
-	"github.com/airchains-network/tracksbft/types"
-	cmttime "github.com/airchains-network/tracksbft/types/time"
-	"github.com/airchains-network/tracksbft/version"
+	"github.com/tendermint/tendermint/crypto"
+	"github.com/tendermint/tendermint/crypto/ed25519"
+	"github.com/tendermint/tendermint/crypto/tmhash"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	cmtversion "github.com/tendermint/tendermint/proto/tendermint/version"
+	"github.com/tendermint/tendermint/types"
+	cmttime "github.com/tendermint/tendermint/types/time"
+	"github.com/tendermint/tendermint/version"
 )
 
 // privKeys is a helper type for testing.

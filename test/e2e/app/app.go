@@ -9,10 +9,10 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/airchains-network/tracksbft/abci/example/code"
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/version"
+	"github.com/tendermint/tendermint/abci/example/code"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/version"
 )
 
 const appVersion = 1

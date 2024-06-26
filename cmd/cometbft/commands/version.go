@@ -6,7 +6,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/airchains-network/tracksbft/version"
+	"github.com/tendermint/tendermint/version"
 )
 
 // VersionCmd ...

@@ -1,8 +1,8 @@
 package core
 
 import (
-	ctypes "github.com/airchains-network/tracksbft/rpc/core/types"
-	rpctypes "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
+	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 )
 
 // UnsafeFlushMempool removes all transactions from the mempool.

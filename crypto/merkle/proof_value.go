@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/airchains-network/tracksbft/crypto/tmhash"
-	cmtcrypto "github.com/airchains-network/tracksbft/proto/tendermint/crypto"
+	"github.com/tendermint/tendermint/crypto/tmhash"
+	cmtcrypto "github.com/tendermint/tendermint/proto/tendermint/crypto"
 )
 
 const ProofOpValue = "simple:v"

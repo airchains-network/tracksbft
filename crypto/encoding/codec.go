@@ -3,11 +3,11 @@ package encoding
 import (
 	"fmt"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	"github.com/airchains-network/tracksbft/crypto/ed25519"
-	"github.com/airchains-network/tracksbft/crypto/secp256k1"
-	"github.com/airchains-network/tracksbft/libs/json"
-	pc "github.com/airchains-network/tracksbft/proto/tendermint/crypto"
+	"github.com/tendermint/tendermint/crypto"
+	"github.com/tendermint/tendermint/crypto/ed25519"
+	"github.com/tendermint/tendermint/crypto/secp256k1"
+	"github.com/tendermint/tendermint/libs/json"
+	pc "github.com/tendermint/tendermint/proto/tendermint/crypto"
 )
 
 func init() {

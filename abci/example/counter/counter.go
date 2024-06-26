@@ -4,8 +4,8 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/airchains-network/tracksbft/abci/example/code"
-	"github.com/airchains-network/tracksbft/abci/types"
+	"github.com/tendermint/tendermint/abci/example/code"
+	"github.com/tendermint/tendermint/abci/types"
 )
 
 type Application struct {

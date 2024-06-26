@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"time"
 
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
-	"github.com/airchains-network/tracksbft/p2p"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
+	"github.com/tendermint/tendermint/p2p"
 )
 
 // errDone is returned by chunkQueue.Next() when all chunks have been returned.

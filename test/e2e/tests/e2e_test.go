@@ -9,10 +9,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	rpchttp "github.com/airchains-network/tracksbft/rpc/client/http"
-	rpctypes "github.com/airchains-network/tracksbft/rpc/core/types"
-	e2e "github.com/airchains-network/tracksbft/test/e2e/pkg"
-	"github.com/airchains-network/tracksbft/types"
+	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
+	rpctypes "github.com/tendermint/tendermint/rpc/core/types"
+	e2e "github.com/tendermint/tendermint/test/e2e/pkg"
+	"github.com/tendermint/tendermint/types"
 )
 
 func init() {

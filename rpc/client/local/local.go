@@ -5,16 +5,16 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/airchains-network/tracksbft/libs/bytes"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtpubsub "github.com/airchains-network/tracksbft/libs/pubsub"
-	cmtquery "github.com/airchains-network/tracksbft/libs/pubsub/query"
-	nm "github.com/airchains-network/tracksbft/node"
-	rpcclient "github.com/airchains-network/tracksbft/rpc/client"
-	"github.com/airchains-network/tracksbft/rpc/core"
-	ctypes "github.com/airchains-network/tracksbft/rpc/core/types"
-	rpctypes "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/libs/bytes"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtpubsub "github.com/tendermint/tendermint/libs/pubsub"
+	cmtquery "github.com/tendermint/tendermint/libs/pubsub/query"
+	nm "github.com/tendermint/tendermint/node"
+	rpcclient "github.com/tendermint/tendermint/rpc/client"
+	"github.com/tendermint/tendermint/rpc/core"
+	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 /*

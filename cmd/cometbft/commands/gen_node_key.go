@@ -5,8 +5,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	cmtos "github.com/airchains-network/tracksbft/libs/os"
-	"github.com/airchains-network/tracksbft/p2p"
+	cmtos "github.com/tendermint/tendermint/libs/os"
+	"github.com/tendermint/tendermint/p2p"
 )
 
 // GenNodeKeyCmd allows the generation of a node key. It prints node's ID to

@@ -5,12 +5,12 @@ import (
 	"os"
 	"time"
 
-	"github.com/airchains-network/tracksbft/crypto/ed25519"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtnet "github.com/airchains-network/tracksbft/libs/net"
-	cmtos "github.com/airchains-network/tracksbft/libs/os"
+	"github.com/tendermint/tendermint/crypto/ed25519"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtnet "github.com/tendermint/tendermint/libs/net"
+	cmtos "github.com/tendermint/tendermint/libs/os"
 
-	"github.com/airchains-network/tracksbft/privval"
+	"github.com/tendermint/tendermint/privval"
 )
 
 func main() {

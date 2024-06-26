@@ -12,11 +12,11 @@ import (
 
 	db "github.com/cometbft/cometbft-db"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/libs/pubsub/query"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
-	"github.com/airchains-network/tracksbft/state/txindex"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/libs/pubsub/query"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	"github.com/tendermint/tendermint/state/txindex"
+	"github.com/tendermint/tendermint/types"
 )
 
 func TestBigInt(t *testing.T) {
@@ -649,7 +649,7 @@ func TestTxSearchMultipleTxs(t *testing.T) {
 	require.NoError(t, err)
 
 	// indexed fourth (to test we don't include txs with similar events)
-	// https://github.com/airchains-network/tracksbft/issues/2908
+	// https://github.com/tendermint/tendermint/issues/2908
 	txResult4 := txResultWithEvents([]abci.Event{
 		{Type: "account", Attributes: []abci.EventAttribute{{Key: []byte("number.id"), Value: []byte("1"), Index: true}}},
 	})

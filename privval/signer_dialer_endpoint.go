@@ -3,8 +3,8 @@ package privval
 import (
 	"time"
 
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/libs/service"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/libs/service"
 )
 
 const (

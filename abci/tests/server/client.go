@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
-	abcicli "github.com/airchains-network/tracksbft/abci/client"
-	"github.com/airchains-network/tracksbft/abci/types"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
+	abcicli "github.com/tendermint/tendermint/abci/client"
+	"github.com/tendermint/tendermint/abci/types"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
 )
 
 func InitChain(client abcicli.Client) error {

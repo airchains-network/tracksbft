@@ -14,16 +14,16 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	cfg "github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/crypto"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
-	cmtstore "github.com/airchains-network/tracksbft/proto/tendermint/store"
-	cmtversion "github.com/airchains-network/tracksbft/proto/tendermint/version"
-	sm "github.com/airchains-network/tracksbft/state"
-	"github.com/airchains-network/tracksbft/types"
-	cmttime "github.com/airchains-network/tracksbft/types/time"
-	"github.com/airchains-network/tracksbft/version"
+	cfg "github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/crypto"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	cmtstore "github.com/tendermint/tendermint/proto/tendermint/store"
+	cmtversion "github.com/tendermint/tendermint/proto/tendermint/version"
+	sm "github.com/tendermint/tendermint/state"
+	"github.com/tendermint/tendermint/types"
+	cmttime "github.com/tendermint/tendermint/types/time"
+	"github.com/tendermint/tendermint/version"
 )
 
 // A cleanupFunc cleans up any config / test files created for a particular

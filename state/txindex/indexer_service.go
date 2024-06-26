@@ -3,9 +3,9 @@ package txindex
 import (
 	"context"
 
-	"github.com/airchains-network/tracksbft/libs/service"
-	"github.com/airchains-network/tracksbft/state/indexer"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/libs/service"
+	"github.com/tendermint/tendermint/state/indexer"
+	"github.com/tendermint/tendermint/types"
 )
 
 // XXX/TODO: These types should be moved to the indexer package.

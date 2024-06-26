@@ -1,8 +1,8 @@
 package proxy
 
 import (
-	abcicli "github.com/airchains-network/tracksbft/abci/client"
-	"github.com/airchains-network/tracksbft/abci/types"
+	abcicli "github.com/tendermint/tendermint/abci/client"
+	"github.com/tendermint/tendermint/abci/types"
 )
 
 //go:generate ../scripts/mockery_generate.sh AppConnConsensus|AppConnMempool|AppConnQuery|AppConnSnapshot

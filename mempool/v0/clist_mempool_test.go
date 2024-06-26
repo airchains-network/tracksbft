@@ -16,18 +16,18 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	abciclient "github.com/airchains-network/tracksbft/abci/client"
-	abciclimocks "github.com/airchains-network/tracksbft/abci/client/mocks"
-	"github.com/airchains-network/tracksbft/abci/example/kvstore"
-	abciserver "github.com/airchains-network/tracksbft/abci/server"
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
-	"github.com/airchains-network/tracksbft/libs/service"
-	"github.com/airchains-network/tracksbft/mempool"
-	"github.com/airchains-network/tracksbft/proxy"
-	"github.com/airchains-network/tracksbft/types"
+	abciclient "github.com/tendermint/tendermint/abci/client"
+	abciclimocks "github.com/tendermint/tendermint/abci/client/mocks"
+	"github.com/tendermint/tendermint/abci/example/kvstore"
+	abciserver "github.com/tendermint/tendermint/abci/server"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	"github.com/tendermint/tendermint/libs/service"
+	"github.com/tendermint/tendermint/mempool"
+	"github.com/tendermint/tendermint/proxy"
+	"github.com/tendermint/tendermint/types"
 )
 
 // A cleanupFunc cleans up any config / test files created for a particular
@@ -685,7 +685,7 @@ func TestMempoolNoCacheOverflow(t *testing.T) {
 }
 
 // This will non-deterministically catch some concurrency failures like
-// https://github.com/airchains-network/tracksbft/issues/3509
+// https://github.com/tendermint/tendermint/issues/3509
 // TODO: all of the tests should probably also run using the remote proxy app
 // since otherwise we're not actually testing the concurrency of the mempool here!
 func TestMempoolRemoteAppConcurrency(t *testing.T) {

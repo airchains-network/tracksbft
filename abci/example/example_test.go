@@ -15,14 +15,14 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtnet "github.com/airchains-network/tracksbft/libs/net"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtnet "github.com/tendermint/tendermint/libs/net"
 
-	abcicli "github.com/airchains-network/tracksbft/abci/client"
-	"github.com/airchains-network/tracksbft/abci/example/code"
-	"github.com/airchains-network/tracksbft/abci/example/kvstore"
-	abciserver "github.com/airchains-network/tracksbft/abci/server"
-	"github.com/airchains-network/tracksbft/abci/types"
+	abcicli "github.com/tendermint/tendermint/abci/client"
+	"github.com/tendermint/tendermint/abci/example/code"
+	"github.com/tendermint/tendermint/abci/example/kvstore"
+	abciserver "github.com/tendermint/tendermint/abci/server"
+	"github.com/tendermint/tendermint/abci/types"
 )
 
 func init() {

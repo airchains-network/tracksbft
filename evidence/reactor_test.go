@@ -16,17 +16,17 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	cfg "github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/crypto"
-	"github.com/airchains-network/tracksbft/crypto/tmhash"
-	"github.com/airchains-network/tracksbft/evidence"
-	"github.com/airchains-network/tracksbft/evidence/mocks"
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/p2p"
-	p2pmocks "github.com/airchains-network/tracksbft/p2p/mocks"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	sm "github.com/airchains-network/tracksbft/state"
-	"github.com/airchains-network/tracksbft/types"
+	cfg "github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/crypto"
+	"github.com/tendermint/tendermint/crypto/tmhash"
+	"github.com/tendermint/tendermint/evidence"
+	"github.com/tendermint/tendermint/evidence/mocks"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/p2p"
+	p2pmocks "github.com/tendermint/tendermint/p2p/mocks"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	sm "github.com/tendermint/tendermint/state"
+	"github.com/tendermint/tendermint/types"
 )
 
 var (

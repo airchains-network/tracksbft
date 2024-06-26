@@ -15,7 +15,7 @@ import (
 	"fmt"
 	"sync"
 
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
 )
 
 // MaxLength is the max allowed number of elements a linked list is

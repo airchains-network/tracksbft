@@ -18,13 +18,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	cmtbytes "github.com/airchains-network/tracksbft/libs/bytes"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
+	cmtbytes "github.com/tendermint/tendermint/libs/bytes"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
 
-	client "github.com/airchains-network/tracksbft/rpc/jsonrpc/client"
-	server "github.com/airchains-network/tracksbft/rpc/jsonrpc/server"
-	types "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
+	client "github.com/tendermint/tendermint/rpc/jsonrpc/client"
+	server "github.com/tendermint/tendermint/rpc/jsonrpc/server"
+	types "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 )
 
 // Client and Server should work over tcp or unix sockets

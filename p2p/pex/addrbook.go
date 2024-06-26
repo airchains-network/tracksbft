@@ -16,13 +16,13 @@ import (
 
 	"github.com/minio/highwayhash"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtmath "github.com/airchains-network/tracksbft/libs/math"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
-	"github.com/airchains-network/tracksbft/libs/service"
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
-	"github.com/airchains-network/tracksbft/p2p"
+	"github.com/tendermint/tendermint/crypto"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtmath "github.com/tendermint/tendermint/libs/math"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	"github.com/tendermint/tendermint/libs/service"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
+	"github.com/tendermint/tendermint/p2p"
 )
 
 const (

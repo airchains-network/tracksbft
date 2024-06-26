@@ -9,10 +9,10 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 
-	"github.com/airchains-network/tracksbft/abci/types"
-	cmtnet "github.com/airchains-network/tracksbft/libs/net"
-	"github.com/airchains-network/tracksbft/libs/service"
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
+	"github.com/tendermint/tendermint/abci/types"
+	cmtnet "github.com/tendermint/tendermint/libs/net"
+	"github.com/tendermint/tendermint/libs/service"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
 )
 
 var _ Client = (*grpcClient)(nil)

@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/airchains-network/tracksbft/libs/bits"
-	cmtjson "github.com/airchains-network/tracksbft/libs/json"
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
+	"github.com/tendermint/tendermint/libs/bits"
+	cmtjson "github.com/tendermint/tendermint/libs/json"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
 )
 
 const (

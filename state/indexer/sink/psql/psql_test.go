@@ -18,9 +18,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/state/txindex"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/state/txindex"
+	"github.com/tendermint/tendermint/types"
 
 	// Register the Postgres database driver.
 	_ "github.com/lib/pq"

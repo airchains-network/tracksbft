@@ -8,9 +8,9 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/airchains-network/tracksbft/abci/example/code"
-	"github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/version"
+	"github.com/tendermint/tendermint/abci/example/code"
+	"github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/version"
 )
 
 var (

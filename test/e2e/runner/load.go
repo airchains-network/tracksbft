@@ -7,12 +7,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/airchains-network/tracksbft/libs/log"
-	rpchttp "github.com/airchains-network/tracksbft/rpc/client/http"
-	e2e "github.com/airchains-network/tracksbft/test/e2e/pkg"
-	"github.com/airchains-network/tracksbft/test/loadtime/payload"
-	"github.com/airchains-network/tracksbft/types"
 	"github.com/google/uuid"
+	"github.com/tendermint/tendermint/libs/log"
+	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
+	e2e "github.com/tendermint/tendermint/test/e2e/pkg"
+	"github.com/tendermint/tendermint/test/loadtime/payload"
+	"github.com/tendermint/tendermint/types"
 )
 
 const workerPoolSize = 16

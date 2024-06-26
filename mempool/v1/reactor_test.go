@@ -12,17 +12,17 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/tracksbft/abci/example/kvstore"
-	"github.com/airchains-network/tracksbft/p2p/mock"
+	"github.com/tendermint/tendermint/abci/example/kvstore"
+	"github.com/tendermint/tendermint/p2p/mock"
 
-	cfg "github.com/airchains-network/tracksbft/config"
+	cfg "github.com/tendermint/tendermint/config"
 
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/mempool"
-	"github.com/airchains-network/tracksbft/p2p"
-	memproto "github.com/airchains-network/tracksbft/proto/tendermint/mempool"
-	"github.com/airchains-network/tracksbft/proxy"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/mempool"
+	"github.com/tendermint/tendermint/p2p"
+	memproto "github.com/tendermint/tendermint/proto/tendermint/mempool"
+	"github.com/tendermint/tendermint/proxy"
+	"github.com/tendermint/tendermint/types"
 )
 
 const (

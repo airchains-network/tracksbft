@@ -1,8 +1,8 @@
 package kvstore
 
 import (
-	"github.com/airchains-network/tracksbft/abci/types"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
+	"github.com/tendermint/tendermint/abci/types"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
 )
 
 // RandVal creates one random validator, with a key derived

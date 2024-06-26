@@ -9,12 +9,12 @@ import (
 	"strings"
 	"time"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/crypto/merkle"
-	"github.com/airchains-network/tracksbft/crypto/tmhash"
-	cmtjson "github.com/airchains-network/tracksbft/libs/json"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/crypto/merkle"
+	"github.com/tendermint/tendermint/crypto/tmhash"
+	cmtjson "github.com/tendermint/tendermint/libs/json"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
 )
 
 // Evidence represents any provable malicious activity by a validator.

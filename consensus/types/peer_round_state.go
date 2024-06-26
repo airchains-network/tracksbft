@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/airchains-network/tracksbft/libs/bits"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/libs/bits"
+	"github.com/tendermint/tendermint/types"
 )
 
 //-----------------------------------------------------------------------------

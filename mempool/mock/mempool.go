@@ -1,10 +1,10 @@
 package mock
 
 import (
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/libs/clist"
-	"github.com/airchains-network/tracksbft/mempool"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/libs/clist"
+	"github.com/tendermint/tendermint/mempool"
+	"github.com/tendermint/tendermint/types"
 )
 
 // Mempool is an empty implementation of a Mempool, useful for testing.

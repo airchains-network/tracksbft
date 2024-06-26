@@ -9,16 +9,16 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/crypto/ed25519"
-	cryptoenc "github.com/airchains-network/tracksbft/crypto/encoding"
-	"github.com/airchains-network/tracksbft/crypto/tmhash"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
-	"github.com/airchains-network/tracksbft/privval"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	"github.com/airchains-network/tracksbft/rpc/client"
-	rpctest "github.com/airchains-network/tracksbft/rpc/test"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/crypto/ed25519"
+	cryptoenc "github.com/tendermint/tendermint/crypto/encoding"
+	"github.com/tendermint/tendermint/crypto/tmhash"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	"github.com/tendermint/tendermint/privval"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/tendermint/tendermint/rpc/client"
+	rpctest "github.com/tendermint/tendermint/rpc/test"
+	"github.com/tendermint/tendermint/types"
 )
 
 // For some reason the empty node used in tests has a time of

@@ -7,10 +7,10 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	cfg "github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/libs/cli"
-	cmtflags "github.com/airchains-network/tracksbft/libs/cli/flags"
-	"github.com/airchains-network/tracksbft/libs/log"
+	cfg "github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/libs/cli"
+	cmtflags "github.com/tendermint/tendermint/libs/cli/flags"
+	"github.com/tendermint/tendermint/libs/log"
 )
 
 var (

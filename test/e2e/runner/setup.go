@@ -16,14 +16,14 @@ import (
 
 	"github.com/BurntSushi/toml"
 
-	"github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/crypto/ed25519"
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/p2p"
-	"github.com/airchains-network/tracksbft/privval"
-	e2e "github.com/airchains-network/tracksbft/test/e2e/pkg"
-	"github.com/airchains-network/tracksbft/test/e2e/pkg/infra"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/crypto/ed25519"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/p2p"
+	"github.com/tendermint/tendermint/privval"
+	e2e "github.com/tendermint/tendermint/test/e2e/pkg"
+	"github.com/tendermint/tendermint/test/e2e/pkg/infra"
+	"github.com/tendermint/tendermint/types"
 )
 
 const (

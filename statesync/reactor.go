@@ -7,14 +7,14 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/config"
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
-	"github.com/airchains-network/tracksbft/p2p"
-	ssproto "github.com/airchains-network/tracksbft/proto/tendermint/statesync"
-	"github.com/airchains-network/tracksbft/proxy"
-	sm "github.com/airchains-network/tracksbft/state"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/config"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
+	"github.com/tendermint/tendermint/p2p"
+	ssproto "github.com/tendermint/tendermint/proto/tendermint/statesync"
+	"github.com/tendermint/tendermint/proxy"
+	sm "github.com/tendermint/tendermint/state"
+	"github.com/tendermint/tendermint/types"
 )
 
 const (

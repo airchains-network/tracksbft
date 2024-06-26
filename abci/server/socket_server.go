@@ -8,11 +8,11 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/airchains-network/tracksbft/abci/types"
-	cmtlog "github.com/airchains-network/tracksbft/libs/log"
-	cmtnet "github.com/airchains-network/tracksbft/libs/net"
-	"github.com/airchains-network/tracksbft/libs/service"
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
+	"github.com/tendermint/tendermint/abci/types"
+	cmtlog "github.com/tendermint/tendermint/libs/log"
+	cmtnet "github.com/tendermint/tendermint/libs/net"
+	"github.com/tendermint/tendermint/libs/service"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
 )
 
 // var maxNumberConnections = 2

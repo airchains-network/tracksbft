@@ -12,11 +12,11 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/airchains-network/tracksbft/abci/example/code"
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	mempl "github.com/airchains-network/tracksbft/mempool"
-	sm "github.com/airchains-network/tracksbft/state"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/abci/example/code"
+	abci "github.com/tendermint/tendermint/abci/types"
+	mempl "github.com/tendermint/tendermint/mempool"
+	sm "github.com/tendermint/tendermint/state"
+	"github.com/tendermint/tendermint/types"
 )
 
 // for testing

@@ -9,9 +9,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/airchains-network/tracksbft/crypto/merkle"
-	cmtmath "github.com/airchains-network/tracksbft/libs/math"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
+	"github.com/tendermint/tendermint/crypto/merkle"
+	cmtmath "github.com/tendermint/tendermint/libs/math"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
 )
 
 const (

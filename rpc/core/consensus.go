@@ -1,11 +1,11 @@
 package core
 
 import (
-	cm "github.com/airchains-network/tracksbft/consensus"
-	cmtmath "github.com/airchains-network/tracksbft/libs/math"
-	ctypes "github.com/airchains-network/tracksbft/rpc/core/types"
-	rpctypes "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
-	"github.com/airchains-network/tracksbft/types"
+	cm "github.com/tendermint/tendermint/consensus"
+	cmtmath "github.com/tendermint/tendermint/libs/math"
+	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 // Validators gets the validator set at the given block height.

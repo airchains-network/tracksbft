@@ -5,13 +5,13 @@ import (
 
 	"github.com/spf13/cobra"
 
-	cfg "github.com/airchains-network/tracksbft/config"
-	cmtos "github.com/airchains-network/tracksbft/libs/os"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
-	"github.com/airchains-network/tracksbft/p2p"
-	"github.com/airchains-network/tracksbft/privval"
-	"github.com/airchains-network/tracksbft/types"
-	cmttime "github.com/airchains-network/tracksbft/types/time"
+	cfg "github.com/tendermint/tendermint/config"
+	cmtos "github.com/tendermint/tendermint/libs/os"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	"github.com/tendermint/tendermint/p2p"
+	"github.com/tendermint/tendermint/privval"
+	"github.com/tendermint/tendermint/types"
+	cmttime "github.com/tendermint/tendermint/types/time"
 )
 
 // InitFilesCmd initialises a fresh CometBFT Core instance.

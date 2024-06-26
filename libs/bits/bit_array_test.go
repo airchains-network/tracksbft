@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
 )
 
 func randBitArray(bits int) (*BitArray, []byte) {

@@ -15,8 +15,8 @@ import (
 
 	"golang.org/x/net/netutil"
 
-	"github.com/airchains-network/tracksbft/libs/log"
-	types "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
+	"github.com/tendermint/tendermint/libs/log"
+	types "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 )
 
 // Config is a RPC server configuration.

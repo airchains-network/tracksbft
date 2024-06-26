@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	cmtbytes "github.com/airchains-network/tracksbft/libs/bytes"
-	"github.com/airchains-network/tracksbft/libs/protoio"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
+	"github.com/tendermint/tendermint/crypto"
+	cmtbytes "github.com/tendermint/tendermint/libs/bytes"
+	"github.com/tendermint/tendermint/libs/protoio"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
 )
 
 const (

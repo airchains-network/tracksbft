@@ -5,9 +5,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	cmtjson "github.com/airchains-network/tracksbft/libs/json"
-	cmtos "github.com/airchains-network/tracksbft/libs/os"
-	"github.com/airchains-network/tracksbft/privval"
+	cmtjson "github.com/tendermint/tendermint/libs/json"
+	cmtos "github.com/tendermint/tendermint/libs/os"
+	"github.com/tendermint/tendermint/privval"
 )
 
 // ShowValidatorCmd adds capabilities for showing the validator info.

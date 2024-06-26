@@ -1,13 +1,13 @@
 package proxy
 
 import (
-	"github.com/airchains-network/tracksbft/libs/bytes"
-	lrpc "github.com/airchains-network/tracksbft/light/rpc"
-	rpcclient "github.com/airchains-network/tracksbft/rpc/client"
-	ctypes "github.com/airchains-network/tracksbft/rpc/core/types"
-	rpcserver "github.com/airchains-network/tracksbft/rpc/jsonrpc/server"
-	rpctypes "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/libs/bytes"
+	lrpc "github.com/tendermint/tendermint/light/rpc"
+	rpcclient "github.com/tendermint/tendermint/rpc/client"
+	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	rpcserver "github.com/tendermint/tendermint/rpc/jsonrpc/server"
+	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 func RPCRoutes(c *lrpc.Client) map[string]*rpcserver.RPCFunc {

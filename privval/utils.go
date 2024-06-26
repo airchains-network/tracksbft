@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/airchains-network/tracksbft/crypto/ed25519"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtnet "github.com/airchains-network/tracksbft/libs/net"
+	"github.com/tendermint/tendermint/crypto/ed25519"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtnet "github.com/tendermint/tendermint/libs/net"
 )
 
 // IsConnTimeout returns a boolean indicating whether the error is known to

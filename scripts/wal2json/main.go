@@ -12,8 +12,8 @@ import (
 	"io"
 	"os"
 
-	cs "github.com/airchains-network/tracksbft/consensus"
-	cmtjson "github.com/airchains-network/tracksbft/libs/json"
+	cs "github.com/tendermint/tendermint/consensus"
+	cmtjson "github.com/tendermint/tendermint/libs/json"
 )
 
 func main() {

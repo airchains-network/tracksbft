@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/airchains-network/tracksbft/light"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/light"
+	"github.com/tendermint/tendermint/types"
 )
 
 // verify verifies the evidence fully by checking:

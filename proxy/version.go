@@ -1,8 +1,8 @@
 package proxy
 
 import (
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/version"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/version"
 )
 
 // RequestInfo contains all the information for sending

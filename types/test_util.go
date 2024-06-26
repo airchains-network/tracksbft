@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	cmtversion "github.com/airchains-network/tracksbft/proto/tendermint/version"
-	"github.com/airchains-network/tracksbft/version"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	cmtversion "github.com/tendermint/tendermint/proto/tendermint/version"
+	"github.com/tendermint/tendermint/version"
 )
 
 func MakeCommit(blockID BlockID, height int64, round int32,

@@ -6,10 +6,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/airchains-network/tracksbft/crypto/merkle"
-	"github.com/airchains-network/tracksbft/crypto/tmhash"
-	cmtbytes "github.com/airchains-network/tracksbft/libs/bytes"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
+	"github.com/tendermint/tendermint/crypto/merkle"
+	"github.com/tendermint/tendermint/crypto/tmhash"
+	cmtbytes "github.com/tendermint/tendermint/libs/bytes"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
 )
 
 // TxKeySize is the size of the transaction key index

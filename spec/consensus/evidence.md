@@ -165,7 +165,7 @@ message Evidence {
     (gogoproto.nullable) = false, (gogoproto.stdtime) = true];
   // Total voting power of the validator set in case the ABCI application does
   // not store historical validators.
-  // https://github.com/airchains-network/tracksbft/issues/4581
+  // https://github.com/tendermint/tendermint\/issues/4581
   int64 total_voting_power = 5;
 }
 ```

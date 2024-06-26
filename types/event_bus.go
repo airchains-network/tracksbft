@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtpubsub "github.com/airchains-network/tracksbft/libs/pubsub"
-	"github.com/airchains-network/tracksbft/libs/service"
+	"github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtpubsub "github.com/tendermint/tendermint/libs/pubsub"
+	"github.com/tendermint/tendermint/libs/service"
 )
 
 const defaultCapacity = 0

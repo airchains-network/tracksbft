@@ -4,9 +4,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/airchains-network/tracksbft/abci/example/kvstore"
-	nm "github.com/airchains-network/tracksbft/node"
-	rpctest "github.com/airchains-network/tracksbft/rpc/test"
+	"github.com/tendermint/tendermint/abci/example/kvstore"
+	nm "github.com/tendermint/tendermint/node"
+	rpctest "github.com/tendermint/tendermint/rpc/test"
 )
 
 var node *nm.Node

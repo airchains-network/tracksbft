@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/crypto"
+	"github.com/tendermint/tendermint/types"
 )
 
 //-----------------------------------------------------

@@ -8,13 +8,13 @@ import (
 	"reflect"
 	"time"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	cmtcon "github.com/airchains-network/tracksbft/consensus"
-	"github.com/airchains-network/tracksbft/crypto/merkle"
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/proxy"
-	sm "github.com/airchains-network/tracksbft/state"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	cmtcon "github.com/tendermint/tendermint/consensus"
+	"github.com/tendermint/tendermint/crypto/merkle"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/proxy"
+	sm "github.com/tendermint/tendermint/state"
+	"github.com/tendermint/tendermint/types"
 )
 
 var crc32c = crc32.MakeTable(crc32.Castagnoli)

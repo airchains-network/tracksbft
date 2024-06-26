@@ -10,13 +10,13 @@ import (
 
 	"github.com/creachadair/taskgroup"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/libs/clist"
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/mempool"
-	"github.com/airchains-network/tracksbft/proxy"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/libs/clist"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/mempool"
+	"github.com/tendermint/tendermint/proxy"
+	"github.com/tendermint/tendermint/types"
 )
 
 var _ mempool.Mempool = (*TxMempool)(nil)

@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	ce "github.com/airchains-network/tracksbft/crypto/encoding"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
+	"github.com/tendermint/tendermint/crypto"
+	ce "github.com/tendermint/tendermint/crypto/encoding"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
 )
 
 // Volatile state for each Validator

@@ -11,16 +11,16 @@ import (
 
 	db "github.com/cometbft/cometbft-db"
 
-	"github.com/airchains-network/tracksbft/abci/example/kvstore"
-	cfg "github.com/airchains-network/tracksbft/config"
-	cmtcon "github.com/airchains-network/tracksbft/consensus"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
-	"github.com/airchains-network/tracksbft/privval"
-	"github.com/airchains-network/tracksbft/proxy"
-	sm "github.com/airchains-network/tracksbft/state"
-	"github.com/airchains-network/tracksbft/store"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/abci/example/kvstore"
+	cfg "github.com/tendermint/tendermint/config"
+	cmtcon "github.com/tendermint/tendermint/consensus"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	"github.com/tendermint/tendermint/privval"
+	"github.com/tendermint/tendermint/proxy"
+	sm "github.com/tendermint/tendermint/state"
+	"github.com/tendermint/tendermint/store"
+	"github.com/tendermint/tendermint/types"
 )
 
 // WALGenerateNBlocks generates a consensus WAL. It does this by spinning up a

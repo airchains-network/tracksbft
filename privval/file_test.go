@@ -10,13 +10,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/tracksbft/crypto/ed25519"
-	"github.com/airchains-network/tracksbft/crypto/tmhash"
-	cmtjson "github.com/airchains-network/tracksbft/libs/json"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	"github.com/airchains-network/tracksbft/types"
-	cmttime "github.com/airchains-network/tracksbft/types/time"
+	"github.com/tendermint/tendermint/crypto/ed25519"
+	"github.com/tendermint/tendermint/crypto/tmhash"
+	cmtjson "github.com/tendermint/tendermint/libs/json"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/tendermint/tendermint/types"
+	cmttime "github.com/tendermint/tendermint/types/time"
 )
 
 func TestGenLoadValidator(t *testing.T) {

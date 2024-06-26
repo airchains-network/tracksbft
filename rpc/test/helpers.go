@@ -8,18 +8,18 @@ import (
 	"strings"
 	"time"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/libs/log"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/libs/log"
 
-	cfg "github.com/airchains-network/tracksbft/config"
-	cmtnet "github.com/airchains-network/tracksbft/libs/net"
-	nm "github.com/airchains-network/tracksbft/node"
-	"github.com/airchains-network/tracksbft/p2p"
-	"github.com/airchains-network/tracksbft/privval"
-	"github.com/airchains-network/tracksbft/proxy"
-	ctypes "github.com/airchains-network/tracksbft/rpc/core/types"
-	core_grpc "github.com/airchains-network/tracksbft/rpc/grpc"
-	rpcclient "github.com/airchains-network/tracksbft/rpc/jsonrpc/client"
+	cfg "github.com/tendermint/tendermint/config"
+	cmtnet "github.com/tendermint/tendermint/libs/net"
+	nm "github.com/tendermint/tendermint/node"
+	"github.com/tendermint/tendermint/p2p"
+	"github.com/tendermint/tendermint/privval"
+	"github.com/tendermint/tendermint/proxy"
+	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	core_grpc "github.com/tendermint/tendermint/rpc/grpc"
+	rpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
 )
 
 // Options helps with specifying some parameters for our RPC testing for greater

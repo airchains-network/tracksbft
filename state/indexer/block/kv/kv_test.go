@@ -8,10 +8,10 @@ import (
 	db "github.com/cometbft/cometbft-db"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/libs/pubsub/query"
-	blockidxkv "github.com/airchains-network/tracksbft/state/indexer/block/kv"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/libs/pubsub/query"
+	blockidxkv "github.com/tendermint/tendermint/state/indexer/block/kv"
+	"github.com/tendermint/tendermint/types"
 )
 
 func TestBlockIndexer(t *testing.T) {

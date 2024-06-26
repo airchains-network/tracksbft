@@ -2,8 +2,8 @@ package core
 
 import (
 	"encoding/json"
-	rpctypes "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
-	tracksTypes "github.com/airchains-network/tracksbft/types/tracks"
+	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
+	tracksTypes "github.com/tendermint/tendermint/types/tracks"
 	"strconv"
 )
 

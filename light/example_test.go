@@ -10,13 +10,13 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/airchains-network/tracksbft/abci/example/kvstore"
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/light"
-	"github.com/airchains-network/tracksbft/light/provider"
-	httpp "github.com/airchains-network/tracksbft/light/provider/http"
-	dbs "github.com/airchains-network/tracksbft/light/store/db"
-	rpctest "github.com/airchains-network/tracksbft/rpc/test"
+	"github.com/tendermint/tendermint/abci/example/kvstore"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/light"
+	"github.com/tendermint/tendermint/light/provider"
+	httpp "github.com/tendermint/tendermint/light/provider/http"
+	dbs "github.com/tendermint/tendermint/light/store/db"
+	rpctest "github.com/tendermint/tendermint/rpc/test"
 )
 
 // Automatically getting new headers and verifying them.

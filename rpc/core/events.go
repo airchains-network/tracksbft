@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"time"
 
-	cmtpubsub "github.com/airchains-network/tracksbft/libs/pubsub"
-	cmtquery "github.com/airchains-network/tracksbft/libs/pubsub/query"
-	ctypes "github.com/airchains-network/tracksbft/rpc/core/types"
-	rpctypes "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
+	cmtpubsub "github.com/tendermint/tendermint/libs/pubsub"
+	cmtquery "github.com/tendermint/tendermint/libs/pubsub/query"
+	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 )
 
 const (

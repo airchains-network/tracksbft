@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/airchains-network/tracksbft/abci/example/kvstore"
-	rpchttp "github.com/airchains-network/tracksbft/rpc/client/http"
-	ctypes "github.com/airchains-network/tracksbft/rpc/core/types"
-	rpctest "github.com/airchains-network/tracksbft/rpc/test"
+	"github.com/tendermint/tendermint/abci/example/kvstore"
+	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
+	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	rpctest "github.com/tendermint/tendermint/rpc/test"
 )
 
 func ExampleHTTP_simple() {

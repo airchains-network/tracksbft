@@ -1,8 +1,8 @@
 package crypto
 
 import (
-	"github.com/airchains-network/tracksbft/crypto/tmhash"
-	"github.com/airchains-network/tracksbft/libs/bytes"
+	"github.com/tendermint/tendermint/crypto/tmhash"
+	"github.com/tendermint/tendermint/libs/bytes"
 )
 
 const (

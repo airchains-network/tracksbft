@@ -3,10 +3,10 @@ package privval
 import (
 	"io"
 
-	"github.com/airchains-network/tracksbft/libs/service"
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
-	privvalproto "github.com/airchains-network/tracksbft/proto/tendermint/privval"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/libs/service"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
+	privvalproto "github.com/tendermint/tendermint/proto/tendermint/privval"
+	"github.com/tendermint/tendermint/types"
 )
 
 // ValidationRequestHandlerFunc handles different remoteSigner requests

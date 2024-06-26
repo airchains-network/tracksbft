@@ -10,13 +10,13 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	cfg "github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/libs/bytes"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
-	"github.com/airchains-network/tracksbft/p2p"
-	"github.com/airchains-network/tracksbft/privval"
-	"github.com/airchains-network/tracksbft/types"
-	cmttime "github.com/airchains-network/tracksbft/types/time"
+	cfg "github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/libs/bytes"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	"github.com/tendermint/tendermint/p2p"
+	"github.com/tendermint/tendermint/privval"
+	"github.com/tendermint/tendermint/types"
+	cmttime "github.com/tendermint/tendermint/types/time"
 )
 
 var (

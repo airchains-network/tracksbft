@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	types "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
+	types "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 )
 
 const (

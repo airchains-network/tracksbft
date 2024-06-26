@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/airchains-network/tracksbft/libs/log"
-	rpctypes "github.com/airchains-network/tracksbft/rpc/core/types"
-	e2e "github.com/airchains-network/tracksbft/test/e2e/pkg"
+	"github.com/tendermint/tendermint/libs/log"
+	rpctypes "github.com/tendermint/tendermint/rpc/core/types"
+	e2e "github.com/tendermint/tendermint/test/e2e/pkg"
 )
 
 // Perturbs a running testnet.

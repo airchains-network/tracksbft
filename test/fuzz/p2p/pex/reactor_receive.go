@@ -3,13 +3,13 @@ package pex
 import (
 	"net"
 
-	"github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/crypto/ed25519"
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/libs/service"
-	"github.com/airchains-network/tracksbft/p2p"
-	"github.com/airchains-network/tracksbft/p2p/pex"
-	"github.com/airchains-network/tracksbft/version"
+	"github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/crypto/ed25519"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/libs/service"
+	"github.com/tendermint/tendermint/p2p"
+	"github.com/tendermint/tendermint/p2p/pex"
+	"github.com/tendermint/tendermint/version"
 )
 
 var (

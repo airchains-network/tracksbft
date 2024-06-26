@@ -10,15 +10,15 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	cfg "github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/crypto"
-	"github.com/airchains-network/tracksbft/crypto/ed25519"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
-	cmtstate "github.com/airchains-network/tracksbft/proto/tendermint/state"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	sm "github.com/airchains-network/tracksbft/state"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	cfg "github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/crypto"
+	"github.com/tendermint/tendermint/crypto/ed25519"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	cmtstate "github.com/tendermint/tendermint/proto/tendermint/state"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	sm "github.com/tendermint/tendermint/state"
+	"github.com/tendermint/tendermint/types"
 )
 
 func TestStoreLoadValidators(t *testing.T) {

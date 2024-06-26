@@ -8,14 +8,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/libs/service"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/libs/service"
 
-	abcicli "github.com/airchains-network/tracksbft/abci/client"
-	"github.com/airchains-network/tracksbft/abci/example/code"
-	abciserver "github.com/airchains-network/tracksbft/abci/server"
-	"github.com/airchains-network/tracksbft/abci/types"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
+	abcicli "github.com/tendermint/tendermint/abci/client"
+	"github.com/tendermint/tendermint/abci/example/code"
+	abciserver "github.com/tendermint/tendermint/abci/server"
+	"github.com/tendermint/tendermint/abci/types"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
 )
 
 const (

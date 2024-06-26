@@ -7,10 +7,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	cmttime "github.com/airchains-network/tracksbft/types/time"
+	"github.com/tendermint/tendermint/crypto"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	cmttime "github.com/tendermint/tendermint/types/time"
 )
 
 func TestVoteSet_AddVote_Good(t *testing.T) {

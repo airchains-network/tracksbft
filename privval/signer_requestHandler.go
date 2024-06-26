@@ -3,12 +3,12 @@ package privval
 import (
 	"fmt"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	cryptoenc "github.com/airchains-network/tracksbft/crypto/encoding"
-	cryptoproto "github.com/airchains-network/tracksbft/proto/tendermint/crypto"
-	privvalproto "github.com/airchains-network/tracksbft/proto/tendermint/privval"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/crypto"
+	cryptoenc "github.com/tendermint/tendermint/crypto/encoding"
+	cryptoproto "github.com/tendermint/tendermint/proto/tendermint/crypto"
+	privvalproto "github.com/tendermint/tendermint/proto/tendermint/privval"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 func DefaultValidationRequestHandler(

@@ -9,12 +9,12 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	cmtstate "github.com/airchains-network/tracksbft/proto/tendermint/state"
-	ctypes "github.com/airchains-network/tracksbft/rpc/core/types"
-	rpctypes "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
-	sm "github.com/airchains-network/tracksbft/state"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	cmtstate "github.com/tendermint/tendermint/proto/tendermint/state"
+	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
+	sm "github.com/tendermint/tendermint/state"
+	"github.com/tendermint/tendermint/types"
 )
 
 func TestBlockchainInfo(t *testing.T) {

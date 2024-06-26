@@ -1,12 +1,12 @@
 package consensus
 
 import (
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/libs/clist"
-	mempl "github.com/airchains-network/tracksbft/mempool"
-	cmtstate "github.com/airchains-network/tracksbft/proto/tendermint/state"
-	"github.com/airchains-network/tracksbft/proxy"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/libs/clist"
+	mempl "github.com/tendermint/tendermint/mempool"
+	cmtstate "github.com/tendermint/tendermint/proto/tendermint/state"
+	"github.com/tendermint/tendermint/proxy"
+	"github.com/tendermint/tendermint/types"
 )
 
 //-----------------------------------------------------------------------------

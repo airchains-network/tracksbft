@@ -3,7 +3,7 @@ package crypto_test
 import (
 	"fmt"
 
-	"github.com/airchains-network/tracksbft/crypto"
+	"github.com/tendermint/tendermint/crypto"
 )
 
 func ExampleSha256() {

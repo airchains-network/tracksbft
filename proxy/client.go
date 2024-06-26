@@ -3,12 +3,12 @@ package proxy
 import (
 	"fmt"
 
-	abcicli "github.com/airchains-network/tracksbft/abci/client"
-	"github.com/airchains-network/tracksbft/abci/example/counter"
-	"github.com/airchains-network/tracksbft/abci/example/kvstore"
-	"github.com/airchains-network/tracksbft/abci/types"
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
-	e2e "github.com/airchains-network/tracksbft/test/e2e/app"
+	abcicli "github.com/tendermint/tendermint/abci/client"
+	"github.com/tendermint/tendermint/abci/example/counter"
+	"github.com/tendermint/tendermint/abci/example/kvstore"
+	"github.com/tendermint/tendermint/abci/types"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
+	e2e "github.com/tendermint/tendermint/test/e2e/app"
 )
 
 //go:generate ../scripts/mockery_generate.sh ClientCreator

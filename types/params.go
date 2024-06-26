@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/crypto/tmhash"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/crypto/tmhash"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
 )
 
 const (

@@ -12,8 +12,8 @@ import (
 	"github.com/btcsuite/btcd/btcec/v2/ecdsa"
 	"golang.org/x/crypto/ripemd160" //nolint: staticcheck // necessary for Bitcoin address format
 
-	"github.com/airchains-network/tracksbft/crypto"
-	cmtjson "github.com/airchains-network/tracksbft/libs/json"
+	"github.com/tendermint/tendermint/crypto"
+	cmtjson "github.com/tendermint/tendermint/libs/json"
 )
 
 // -------------------------------------

@@ -5,10 +5,10 @@ import (
 	"net"
 	"time"
 
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/libs/service"
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
-	privvalproto "github.com/airchains-network/tracksbft/proto/tendermint/privval"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/libs/service"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
+	privvalproto "github.com/tendermint/tendermint/proto/tendermint/privval"
 )
 
 // SignerListenerEndpointOption sets an optional parameter on the SignerListenerEndpoint.

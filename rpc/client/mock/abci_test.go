@@ -9,13 +9,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/tracksbft/abci/example/kvstore"
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/libs/bytes"
-	"github.com/airchains-network/tracksbft/rpc/client"
-	"github.com/airchains-network/tracksbft/rpc/client/mock"
-	ctypes "github.com/airchains-network/tracksbft/rpc/core/types"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/abci/example/kvstore"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/libs/bytes"
+	"github.com/tendermint/tendermint/rpc/client"
+	"github.com/tendermint/tendermint/rpc/client/mock"
+	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 func TestABCIMock(t *testing.T) {

@@ -5,9 +5,9 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/airchains-network/tracksbft/abci/example/kvstore"
-	"github.com/airchains-network/tracksbft/mempool"
-	"github.com/airchains-network/tracksbft/proxy"
+	"github.com/tendermint/tendermint/abci/example/kvstore"
+	"github.com/tendermint/tendermint/mempool"
+	"github.com/tendermint/tendermint/proxy"
 )
 
 func BenchmarkReap(b *testing.B) {

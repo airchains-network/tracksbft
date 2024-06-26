@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	"github.com/airchains-network/tracksbft/crypto/ed25519"
-	cmtbytes "github.com/airchains-network/tracksbft/libs/bytes"
-	cmtjson "github.com/airchains-network/tracksbft/libs/json"
-	cmtos "github.com/airchains-network/tracksbft/libs/os"
-	"github.com/airchains-network/tracksbft/libs/tempfile"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/crypto"
+	"github.com/tendermint/tendermint/crypto/ed25519"
+	cmtbytes "github.com/tendermint/tendermint/libs/bytes"
+	cmtjson "github.com/tendermint/tendermint/libs/json"
+	cmtos "github.com/tendermint/tendermint/libs/os"
+	"github.com/tendermint/tendermint/libs/tempfile"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 // *******************************************************************************************************************

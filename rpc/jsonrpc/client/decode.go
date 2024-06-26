@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	cmtjson "github.com/airchains-network/tracksbft/libs/json"
-	types "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
+	cmtjson "github.com/tendermint/tendermint/libs/json"
+	types "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 )
 
 func unmarshalResponseBytes(

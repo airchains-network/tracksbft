@@ -12,11 +12,11 @@ import (
 	dbm "github.com/cometbft/cometbft-db"
 	"github.com/gogo/protobuf/proto"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/libs/pubsub/query"
-	"github.com/airchains-network/tracksbft/state/indexer"
-	"github.com/airchains-network/tracksbft/state/txindex"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/libs/pubsub/query"
+	"github.com/tendermint/tendermint/state/indexer"
+	"github.com/tendermint/tendermint/state/txindex"
+	"github.com/tendermint/tendermint/types"
 )
 
 const (

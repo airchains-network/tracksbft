@@ -9,11 +9,11 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/airchains-network/tracksbft/abci/example/code"
-	"github.com/airchains-network/tracksbft/abci/types"
-	cryptoenc "github.com/airchains-network/tracksbft/crypto/encoding"
-	"github.com/airchains-network/tracksbft/libs/log"
-	pc "github.com/airchains-network/tracksbft/proto/tendermint/crypto"
+	"github.com/tendermint/tendermint/abci/example/code"
+	"github.com/tendermint/tendermint/abci/types"
+	cryptoenc "github.com/tendermint/tendermint/crypto/encoding"
+	"github.com/tendermint/tendermint/libs/log"
+	pc "github.com/tendermint/tendermint/proto/tendermint/crypto"
 )
 
 const (

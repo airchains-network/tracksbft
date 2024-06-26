@@ -6,12 +6,12 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtpubsub "github.com/airchains-network/tracksbft/libs/pubsub"
-	"github.com/airchains-network/tracksbft/light"
-	lrpc "github.com/airchains-network/tracksbft/light/rpc"
-	rpchttp "github.com/airchains-network/tracksbft/rpc/client/http"
-	rpcserver "github.com/airchains-network/tracksbft/rpc/jsonrpc/server"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtpubsub "github.com/tendermint/tendermint/libs/pubsub"
+	"github.com/tendermint/tendermint/light"
+	lrpc "github.com/tendermint/tendermint/light/rpc"
+	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
+	rpcserver "github.com/tendermint/tendermint/rpc/jsonrpc/server"
 )
 
 // A Proxy defines parameters for running an HTTP server proxy.

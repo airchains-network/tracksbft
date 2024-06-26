@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/airchains-network/tracksbft/light/provider"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/light/provider"
+	"github.com/tendermint/tendermint/types"
 )
 
 // The detector component of the light client detects and handles attacks on the light client.

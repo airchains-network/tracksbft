@@ -1,7 +1,7 @@
 package cmap
 
 import (
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
 )
 
 // CMap is a goroutine-safe map

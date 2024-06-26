@@ -10,16 +10,16 @@ import (
 	"github.com/gogo/protobuf/proto"
 	gogotypes "github.com/gogo/protobuf/types"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	"github.com/airchains-network/tracksbft/crypto/merkle"
-	"github.com/airchains-network/tracksbft/crypto/tmhash"
-	"github.com/airchains-network/tracksbft/libs/bits"
-	cmtbytes "github.com/airchains-network/tracksbft/libs/bytes"
-	cmtmath "github.com/airchains-network/tracksbft/libs/math"
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	cmtversion "github.com/airchains-network/tracksbft/proto/tendermint/version"
-	"github.com/airchains-network/tracksbft/version"
+	"github.com/tendermint/tendermint/crypto"
+	"github.com/tendermint/tendermint/crypto/merkle"
+	"github.com/tendermint/tendermint/crypto/tmhash"
+	"github.com/tendermint/tendermint/libs/bits"
+	cmtbytes "github.com/tendermint/tendermint/libs/bytes"
+	cmtmath "github.com/tendermint/tendermint/libs/math"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	cmtversion "github.com/tendermint/tendermint/proto/tendermint/version"
+	"github.com/tendermint/tendermint/version"
 )
 
 const (
@@ -321,7 +321,7 @@ func MaxDataBytesNoEvidence(maxBytes int64, valsCount int) int64 {
 // NOTE: changes to the Header should be duplicated in:
 // - header.Hash()
 // - abci.Header
-// - https://github.com/airchains-network/tracksbft/blob/v0.34.x/spec/blockchain/blockchain.md
+// - https://github.com/tendermint/tendermint/blob/v0.34.x/spec/blockchain/blockchain.md
 type Header struct {
 	// basic block info
 	Version cmtversion.Consensus `json:"version"`

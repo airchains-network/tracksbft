@@ -6,7 +6,7 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/airchains-network/tracksbft/test/loadtime/payload"
+	"github.com/tendermint/tendermint/test/loadtime/payload"
 )
 
 const payloadSizeTarget = 1024 // 1kb

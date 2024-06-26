@@ -7,12 +7,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	flow "github.com/airchains-network/tracksbft/libs/flowrate"
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/libs/service"
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
-	"github.com/airchains-network/tracksbft/p2p"
-	"github.com/airchains-network/tracksbft/types"
+	flow "github.com/tendermint/tendermint/libs/flowrate"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/libs/service"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
+	"github.com/tendermint/tendermint/p2p"
+	"github.com/tendermint/tendermint/types"
 )
 
 /*

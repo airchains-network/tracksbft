@@ -4,8 +4,8 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/airchains-network/tracksbft/libs/pubsub/query"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/libs/pubsub/query"
+	"github.com/tendermint/tendermint/types"
 )
 
 // QueryRanges defines a mapping between a composite event key and a QueryRange.

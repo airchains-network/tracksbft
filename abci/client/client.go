@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/libs/service"
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
+	"github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/libs/service"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
 )
 
 const (
@@ -136,7 +136,7 @@ func (r *ReqRes) InvokeCallback() {
 // marked done and SetCallback is called before calling GetCallback as that
 // will invoke the callback twice and create a potential race condition.
 //
-// ref: https://github.com/airchains-network/tracksbft/issues/5439
+// ref: https://github.com/tendermint/tendermint/issues/5439
 func (r *ReqRes) GetCallback() func(*types.Response) {
 	r.mtx.Lock()
 	defer r.mtx.Unlock()

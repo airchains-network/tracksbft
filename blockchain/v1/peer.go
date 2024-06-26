@@ -5,10 +5,10 @@ import (
 	"math"
 	"time"
 
-	flow "github.com/airchains-network/tracksbft/libs/flowrate"
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/p2p"
-	"github.com/airchains-network/tracksbft/types"
+	flow "github.com/tendermint/tendermint/libs/flowrate"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/p2p"
+	"github.com/tendermint/tendermint/types"
 )
 
 //--------

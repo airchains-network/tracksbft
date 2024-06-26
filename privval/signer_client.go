@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	cryptoenc "github.com/airchains-network/tracksbft/crypto/encoding"
-	privvalproto "github.com/airchains-network/tracksbft/proto/tendermint/privval"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/crypto"
+	cryptoenc "github.com/tendermint/tendermint/crypto/encoding"
+	privvalproto "github.com/tendermint/tendermint/proto/tendermint/privval"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 // SignerClient implements PrivValidator.

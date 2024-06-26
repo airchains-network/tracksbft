@@ -8,10 +8,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/airchains-network/tracksbft/libs/log"
-	e2e "github.com/airchains-network/tracksbft/test/e2e/pkg"
-	"github.com/airchains-network/tracksbft/test/e2e/pkg/infra"
-	"github.com/airchains-network/tracksbft/test/e2e/pkg/infra/docker"
+	"github.com/tendermint/tendermint/libs/log"
+	e2e "github.com/tendermint/tendermint/test/e2e/pkg"
+	"github.com/tendermint/tendermint/test/e2e/pkg/infra"
+	"github.com/tendermint/tendermint/test/e2e/pkg/infra/docker"
 )
 
 var (

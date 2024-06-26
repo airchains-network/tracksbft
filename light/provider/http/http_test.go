@@ -10,13 +10,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/tracksbft/abci/example/kvstore"
-	"github.com/airchains-network/tracksbft/light/provider"
-	lighthttp "github.com/airchains-network/tracksbft/light/provider/http"
-	rpcclient "github.com/airchains-network/tracksbft/rpc/client"
-	rpchttp "github.com/airchains-network/tracksbft/rpc/client/http"
-	rpctest "github.com/airchains-network/tracksbft/rpc/test"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/abci/example/kvstore"
+	"github.com/tendermint/tendermint/light/provider"
+	lighthttp "github.com/tendermint/tendermint/light/provider/http"
+	rpcclient "github.com/tendermint/tendermint/rpc/client"
+	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
+	rpctest "github.com/tendermint/tendermint/rpc/test"
+	"github.com/tendermint/tendermint/types"
 )
 
 func TestNewProvider(t *testing.T) {

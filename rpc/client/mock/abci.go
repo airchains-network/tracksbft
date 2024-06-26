@@ -3,12 +3,12 @@ package mock
 import (
 	"context"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/libs/bytes"
-	"github.com/airchains-network/tracksbft/proxy"
-	"github.com/airchains-network/tracksbft/rpc/client"
-	ctypes "github.com/airchains-network/tracksbft/rpc/core/types"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/libs/bytes"
+	"github.com/tendermint/tendermint/proxy"
+	"github.com/tendermint/tendermint/rpc/client"
+	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 // ABCIApp will send all abci related request to the named app,

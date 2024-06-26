@@ -1,7 +1,7 @@
 package state
 
 import (
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 //------------------------------------------------------

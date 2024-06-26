@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/airchains-network/tracksbft/abci/types"
-	cmtnet "github.com/airchains-network/tracksbft/libs/net"
+	"github.com/tendermint/tendermint/abci/types"
+	cmtnet "github.com/tendermint/tendermint/libs/net"
 )
 
 func main() {

@@ -13,12 +13,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/tracksbft/consensus/types"
-	"github.com/airchains-network/tracksbft/crypto/merkle"
-	"github.com/airchains-network/tracksbft/libs/autofile"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmttypes "github.com/airchains-network/tracksbft/types"
-	cmttime "github.com/airchains-network/tracksbft/types/time"
+	"github.com/tendermint/tendermint/consensus/types"
+	"github.com/tendermint/tendermint/crypto/merkle"
+	"github.com/tendermint/tendermint/libs/autofile"
+	"github.com/tendermint/tendermint/libs/log"
+	cmttypes "github.com/tendermint/tendermint/types"
+	cmttime "github.com/tendermint/tendermint/types/time"
 )
 
 const (

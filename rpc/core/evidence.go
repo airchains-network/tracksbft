@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	ctypes "github.com/airchains-network/tracksbft/rpc/core/types"
-	rpctypes "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
-	"github.com/airchains-network/tracksbft/types"
+	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 // BroadcastEvidence broadcasts evidence of the misbehavior.

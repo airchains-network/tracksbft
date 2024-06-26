@@ -11,15 +11,15 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/tracksbft/abci/example/counter"
-	cstypes "github.com/airchains-network/tracksbft/consensus/types"
-	"github.com/airchains-network/tracksbft/crypto/tmhash"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtpubsub "github.com/airchains-network/tracksbft/libs/pubsub"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
-	p2pmock "github.com/airchains-network/tracksbft/p2p/mock"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/abci/example/counter"
+	cstypes "github.com/tendermint/tendermint/consensus/types"
+	"github.com/tendermint/tendermint/crypto/tmhash"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtpubsub "github.com/tendermint/tendermint/libs/pubsub"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	p2pmock "github.com/tendermint/tendermint/p2p/mock"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 /*

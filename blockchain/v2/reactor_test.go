@@ -14,20 +14,20 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/behaviour"
-	cfg "github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/libs/service"
-	"github.com/airchains-network/tracksbft/mempool/mock"
-	"github.com/airchains-network/tracksbft/p2p"
-	"github.com/airchains-network/tracksbft/p2p/conn"
-	bcproto "github.com/airchains-network/tracksbft/proto/tendermint/blockchain"
-	"github.com/airchains-network/tracksbft/proxy"
-	sm "github.com/airchains-network/tracksbft/state"
-	"github.com/airchains-network/tracksbft/store"
-	"github.com/airchains-network/tracksbft/types"
-	cmttime "github.com/airchains-network/tracksbft/types/time"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/behaviour"
+	cfg "github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/libs/service"
+	"github.com/tendermint/tendermint/mempool/mock"
+	"github.com/tendermint/tendermint/p2p"
+	"github.com/tendermint/tendermint/p2p/conn"
+	bcproto "github.com/tendermint/tendermint/proto/tendermint/blockchain"
+	"github.com/tendermint/tendermint/proxy"
+	sm "github.com/tendermint/tendermint/state"
+	"github.com/tendermint/tendermint/store"
+	"github.com/tendermint/tendermint/types"
+	cmttime "github.com/tendermint/tendermint/types/time"
 )
 
 type mockPeer struct {
@@ -160,7 +160,7 @@ func newTestReactor(p testReactorParams) *BlockchainReactor {
 }
 
 // This test is left here and not deleted to retain the termination cases for
-// future improvement in [#4482](https://github.com/airchains-network/tracksbft/issues/4482).
+// future improvement in [#4482](https://github.com/tendermint/tendermint/issues/4482).
 // func TestReactorTerminationScenarios(t *testing.T) {
 
 // 	config := cfg.ResetTestRoot("blockchain_reactor_v2_test")

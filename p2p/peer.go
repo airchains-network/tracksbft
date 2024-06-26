@@ -8,11 +8,11 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/airchains-network/tracksbft/libs/cmap"
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/libs/service"
+	"github.com/tendermint/tendermint/libs/cmap"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/libs/service"
 
-	cmtconn "github.com/airchains-network/tracksbft/p2p/conn"
+	cmtconn "github.com/tendermint/tendermint/p2p/conn"
 )
 
 //go:generate ../scripts/mockery_generate.sh Peer

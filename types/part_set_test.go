@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/tracksbft/crypto/merkle"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
+	"github.com/tendermint/tendermint/crypto/merkle"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
 )
 
 const (

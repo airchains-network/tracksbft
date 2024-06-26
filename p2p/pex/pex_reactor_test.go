@@ -12,11 +12,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/p2p"
-	"github.com/airchains-network/tracksbft/p2p/mock"
-	tmp2p "github.com/airchains-network/tracksbft/proto/tendermint/p2p"
+	"github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/p2p"
+	"github.com/tendermint/tendermint/p2p/mock"
+	tmp2p "github.com/tendermint/tendermint/proto/tendermint/p2p"
 )
 
 var cfg *config.P2PConfig
@@ -402,7 +402,7 @@ func TestPEXReactorDialsPeerUpToMaxAttemptsInSeedMode(t *testing.T) {
 // this should give it time to request addrs and for the seed
 // to call FlushStop, and allows us to test calling Stop concurrently
 // with FlushStop. Before a fix, this non-deterministically reproduced
-// https://github.com/airchains-network/tracksbft/issues/3231.
+// https://github.com/tendermint/tendermint/issues/3231.
 func TestPEXReactorSeedModeFlushStop(t *testing.T) {
 	N := 2
 	switches := make([]*p2p.Switch, N)

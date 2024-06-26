@@ -1,8 +1,8 @@
 package sr25519
 
 import (
-	"github.com/airchains-network/tracksbft/crypto"
-	cmtjson "github.com/airchains-network/tracksbft/libs/json"
+	"github.com/tendermint/tendermint/crypto"
+	cmtjson "github.com/tendermint/tendermint/libs/json"
 )
 
 var _ crypto.PrivKey = PrivKey{}

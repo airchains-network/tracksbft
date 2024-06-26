@@ -10,10 +10,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/tracksbft/libs/log"
+	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/airchains-network/tracksbft/libs/pubsub"
-	"github.com/airchains-network/tracksbft/libs/pubsub/query"
+	"github.com/tendermint/tendermint/libs/pubsub"
+	"github.com/tendermint/tendermint/libs/pubsub/query"
 )
 
 const (

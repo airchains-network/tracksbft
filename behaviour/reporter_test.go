@@ -4,8 +4,8 @@ import (
 	"sync"
 	"testing"
 
-	bh "github.com/airchains-network/tracksbft/behaviour"
-	"github.com/airchains-network/tracksbft/p2p"
+	bh "github.com/tendermint/tendermint/behaviour"
+	"github.com/tendermint/tendermint/p2p"
 )
 
 // TestMockReporter tests the MockReporter's ability to store reported

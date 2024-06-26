@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtos "github.com/airchains-network/tracksbft/libs/os"
-	rpcserver "github.com/airchains-network/tracksbft/rpc/jsonrpc/server"
-	rpctypes "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtos "github.com/tendermint/tendermint/libs/os"
+	rpcserver "github.com/tendermint/tendermint/rpc/jsonrpc/server"
+	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 )
 
 var routes = map[string]*rpcserver.RPCFunc{

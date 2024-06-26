@@ -5,14 +5,14 @@ import (
 	"net"
 	"time"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	"github.com/airchains-network/tracksbft/crypto/ed25519"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtnet "github.com/airchains-network/tracksbft/libs/net"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
+	"github.com/tendermint/tendermint/crypto"
+	"github.com/tendermint/tendermint/crypto/ed25519"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtnet "github.com/tendermint/tendermint/libs/net"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
 
-	"github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/p2p/conn"
+	"github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/p2p/conn"
 )
 
 const testCh = 0x01

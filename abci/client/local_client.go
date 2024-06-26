@@ -1,9 +1,9 @@
 package abcicli
 
 import (
-	types "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/libs/service"
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
+	types "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/libs/service"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
 )
 
 var _ Client = (*localClient)(nil)

@@ -19,12 +19,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/crypto/ed25519"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
-	"github.com/airchains-network/tracksbft/p2p/conn"
-	p2pproto "github.com/airchains-network/tracksbft/proto/tendermint/p2p"
+	"github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/crypto/ed25519"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
+	"github.com/tendermint/tendermint/p2p/conn"
+	p2pproto "github.com/tendermint/tendermint/proto/tendermint/p2p"
 )
 
 var cfg *config.P2PConfig

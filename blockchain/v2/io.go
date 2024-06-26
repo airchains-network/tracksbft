@@ -3,10 +3,10 @@ package v2
 import (
 	"fmt"
 
-	"github.com/airchains-network/tracksbft/p2p"
-	bcproto "github.com/airchains-network/tracksbft/proto/tendermint/blockchain"
-	"github.com/airchains-network/tracksbft/state"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/p2p"
+	bcproto "github.com/tendermint/tendermint/proto/tendermint/blockchain"
+	"github.com/tendermint/tendermint/state"
+	"github.com/tendermint/tendermint/types"
 )
 
 type iIO interface {

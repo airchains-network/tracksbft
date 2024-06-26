@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"time"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	cryptoenc "github.com/airchains-network/tracksbft/crypto/encoding"
-	"github.com/airchains-network/tracksbft/libs/fail"
-	"github.com/airchains-network/tracksbft/libs/log"
-	mempl "github.com/airchains-network/tracksbft/mempool"
-	cmtstate "github.com/airchains-network/tracksbft/proto/tendermint/state"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	"github.com/airchains-network/tracksbft/proxy"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	cryptoenc "github.com/tendermint/tendermint/crypto/encoding"
+	"github.com/tendermint/tendermint/libs/fail"
+	"github.com/tendermint/tendermint/libs/log"
+	mempl "github.com/tendermint/tendermint/mempool"
+	cmtstate "github.com/tendermint/tendermint/proto/tendermint/state"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/tendermint/tendermint/proxy"
+	"github.com/tendermint/tendermint/types"
 )
 
 //-----------------------------------------------------------------------------

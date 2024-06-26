@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	cmtcrypto "github.com/airchains-network/tracksbft/proto/tendermint/crypto"
+	cmtcrypto "github.com/tendermint/tendermint/proto/tendermint/crypto"
 )
 
 //----------------------------------------

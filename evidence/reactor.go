@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	clist "github.com/airchains-network/tracksbft/libs/clist"
-	"github.com/airchains-network/tracksbft/libs/log"
-	"github.com/airchains-network/tracksbft/p2p"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	"github.com/airchains-network/tracksbft/types"
 	"github.com/gogo/protobuf/proto"
+	clist "github.com/tendermint/tendermint/libs/clist"
+	"github.com/tendermint/tendermint/libs/log"
+	"github.com/tendermint/tendermint/p2p"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 const (

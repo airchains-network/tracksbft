@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	cmtmath "github.com/airchains-network/tracksbft/libs/math"
-	"github.com/airchains-network/tracksbft/types"
+	cmtmath "github.com/tendermint/tendermint/libs/math"
+	"github.com/tendermint/tendermint/types"
 )
 
 var (

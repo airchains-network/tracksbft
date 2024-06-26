@@ -1,7 +1,7 @@
 package evidence
 
 import (
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 //go:generate ../scripts/mockery_generate.sh BlockStore

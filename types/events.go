@@ -3,10 +3,10 @@ package types
 import (
 	"fmt"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	cmtjson "github.com/airchains-network/tracksbft/libs/json"
-	cmtpubsub "github.com/airchains-network/tracksbft/libs/pubsub"
-	cmtquery "github.com/airchains-network/tracksbft/libs/pubsub/query"
+	abci "github.com/tendermint/tendermint/abci/types"
+	cmtjson "github.com/tendermint/tendermint/libs/json"
+	cmtpubsub "github.com/tendermint/tendermint/libs/pubsub"
+	cmtquery "github.com/tendermint/tendermint/libs/pubsub/query"
 )
 
 // Reserved event types (alphabetically sorted).

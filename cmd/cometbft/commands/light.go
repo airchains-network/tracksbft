@@ -15,14 +15,14 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtmath "github.com/airchains-network/tracksbft/libs/math"
-	cmtos "github.com/airchains-network/tracksbft/libs/os"
-	"github.com/airchains-network/tracksbft/light"
-	lproxy "github.com/airchains-network/tracksbft/light/proxy"
-	lrpc "github.com/airchains-network/tracksbft/light/rpc"
-	dbs "github.com/airchains-network/tracksbft/light/store/db"
-	rpcserver "github.com/airchains-network/tracksbft/rpc/jsonrpc/server"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtmath "github.com/tendermint/tendermint/libs/math"
+	cmtos "github.com/tendermint/tendermint/libs/os"
+	"github.com/tendermint/tendermint/light"
+	lproxy "github.com/tendermint/tendermint/light/proxy"
+	lrpc "github.com/tendermint/tendermint/light/rpc"
+	dbs "github.com/tendermint/tendermint/light/store/db"
+	rpcserver "github.com/tendermint/tendermint/rpc/jsonrpc/server"
 )
 
 // LightCmd represents the base command when called without any subcommands
@@ -207,7 +207,7 @@ func runProxy(cmd *cobra.Command, args []string) error {
 	cfg.MaxOpenConnections = maxOpenConnections
 	// If necessary adjust global WriteTimeout to ensure it's greater than
 	// TimeoutBroadcastTxCommit.
-	// See https://github.com/airchains-network/tracksbft/issues/3435
+	// See https://github.com/tendermint/tendermint/issues/3435
 	if cfg.WriteTimeout <= config.RPC.TimeoutBroadcastTxCommit {
 		cfg.WriteTimeout = config.RPC.TimeoutBroadcastTxCommit + 1*time.Second
 	}

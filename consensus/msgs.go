@@ -4,14 +4,14 @@ import (
 	"errors"
 	"fmt"
 
-	cstypes "github.com/airchains-network/tracksbft/consensus/types"
-	"github.com/airchains-network/tracksbft/libs/bits"
-	cmtmath "github.com/airchains-network/tracksbft/libs/math"
-	"github.com/airchains-network/tracksbft/p2p"
-	cmtcons "github.com/airchains-network/tracksbft/proto/tendermint/consensus"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	"github.com/airchains-network/tracksbft/types"
 	"github.com/gogo/protobuf/proto"
+	cstypes "github.com/tendermint/tendermint/consensus/types"
+	"github.com/tendermint/tendermint/libs/bits"
+	cmtmath "github.com/tendermint/tendermint/libs/math"
+	"github.com/tendermint/tendermint/p2p"
+	cmtcons "github.com/tendermint/tendermint/proto/tendermint/consensus"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 // MsgToProto takes a consensus message type and returns the proto defined consensus message.

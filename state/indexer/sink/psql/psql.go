@@ -11,9 +11,9 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/libs/pubsub/query"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/libs/pubsub/query"
+	"github.com/tendermint/tendermint/types"
 )
 
 const (

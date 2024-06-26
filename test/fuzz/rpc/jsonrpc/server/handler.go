@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"net/http/httptest"
 
-	"github.com/airchains-network/tracksbft/libs/log"
-	rs "github.com/airchains-network/tracksbft/rpc/jsonrpc/server"
-	types "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
+	"github.com/tendermint/tendermint/libs/log"
+	rs "github.com/tendermint/tendermint/rpc/jsonrpc/server"
+	types "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 )
 
 var rpcFuncMap = map[string]*rs.RPCFunc{

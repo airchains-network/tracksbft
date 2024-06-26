@@ -12,13 +12,13 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	cfg "github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtos "github.com/airchains-network/tracksbft/libs/os"
-	"github.com/airchains-network/tracksbft/proxy"
-	sm "github.com/airchains-network/tracksbft/state"
-	"github.com/airchains-network/tracksbft/store"
-	"github.com/airchains-network/tracksbft/types"
+	cfg "github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtos "github.com/tendermint/tendermint/libs/os"
+	"github.com/tendermint/tendermint/proxy"
+	sm "github.com/tendermint/tendermint/state"
+	"github.com/tendermint/tendermint/store"
+	"github.com/tendermint/tendermint/types"
 )
 
 const (

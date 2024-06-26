@@ -10,10 +10,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	cmtpubsub "github.com/airchains-network/tracksbft/libs/pubsub"
-	cmtquery "github.com/airchains-network/tracksbft/libs/pubsub/query"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
+	abci "github.com/tendermint/tendermint/abci/types"
+	cmtpubsub "github.com/tendermint/tendermint/libs/pubsub"
+	cmtquery "github.com/tendermint/tendermint/libs/pubsub/query"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
 )
 
 func TestEventBusPublishEventTx(t *testing.T) {

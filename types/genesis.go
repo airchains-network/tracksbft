@@ -8,12 +8,12 @@ import (
 	"os"
 	"time"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	cmtbytes "github.com/airchains-network/tracksbft/libs/bytes"
-	cmtjson "github.com/airchains-network/tracksbft/libs/json"
-	cmtos "github.com/airchains-network/tracksbft/libs/os"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	cmttime "github.com/airchains-network/tracksbft/types/time"
+	"github.com/tendermint/tendermint/crypto"
+	cmtbytes "github.com/tendermint/tendermint/libs/bytes"
+	cmtjson "github.com/tendermint/tendermint/libs/json"
+	cmtos "github.com/tendermint/tendermint/libs/os"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	cmttime "github.com/tendermint/tendermint/types/time"
 )
 
 const (

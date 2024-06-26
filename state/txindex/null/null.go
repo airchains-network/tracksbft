@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/libs/pubsub/query"
-	"github.com/airchains-network/tracksbft/state/txindex"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/libs/pubsub/query"
+	"github.com/tendermint/tendermint/state/txindex"
 )
 
 var _ txindex.TxIndexer = (*TxIndex)(nil)

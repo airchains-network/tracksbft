@@ -11,13 +11,13 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	auto "github.com/airchains-network/tracksbft/libs/autofile"
-	cmtjson "github.com/airchains-network/tracksbft/libs/json"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtos "github.com/airchains-network/tracksbft/libs/os"
-	"github.com/airchains-network/tracksbft/libs/service"
-	cmtcons "github.com/airchains-network/tracksbft/proto/tendermint/consensus"
-	cmttime "github.com/airchains-network/tracksbft/types/time"
+	auto "github.com/tendermint/tendermint/libs/autofile"
+	cmtjson "github.com/tendermint/tendermint/libs/json"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtos "github.com/tendermint/tendermint/libs/os"
+	"github.com/tendermint/tendermint/libs/service"
+	cmtcons "github.com/tendermint/tendermint/proto/tendermint/consensus"
+	cmttime "github.com/tendermint/tendermint/types/time"
 )
 
 const (

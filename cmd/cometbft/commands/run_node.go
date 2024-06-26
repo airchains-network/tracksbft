@@ -9,9 +9,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	cfg "github.com/airchains-network/tracksbft/config"
-	cmtos "github.com/airchains-network/tracksbft/libs/os"
-	nm "github.com/airchains-network/tracksbft/node"
+	cfg "github.com/tendermint/tendermint/config"
+	cmtos "github.com/tendermint/tendermint/libs/os"
+	nm "github.com/tendermint/tendermint/node"
 )
 
 var (

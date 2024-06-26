@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/airchains-network/tracksbft/light/provider"
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/light/provider"
+	"github.com/tendermint/tendermint/types"
 )
 
 type Mock struct {

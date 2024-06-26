@@ -10,12 +10,12 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	"github.com/airchains-network/tracksbft/crypto/tmhash"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
-	cmtversion "github.com/airchains-network/tracksbft/proto/tendermint/version"
-	"github.com/airchains-network/tracksbft/types"
-	"github.com/airchains-network/tracksbft/version"
+	"github.com/tendermint/tendermint/crypto"
+	"github.com/tendermint/tendermint/crypto/tmhash"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	cmtversion "github.com/tendermint/tendermint/proto/tendermint/version"
+	"github.com/tendermint/tendermint/types"
+	"github.com/tendermint/tendermint/version"
 )
 
 func TestLast_FirstLightBlockHeight(t *testing.T) {

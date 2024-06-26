@@ -4,9 +4,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/airchains-network/tracksbft/config"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
+	"github.com/tendermint/tendermint/config"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
 )
 
 // FuzzedConnection wraps any net.Conn and depending on the mode either delays

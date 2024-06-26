@@ -6,16 +6,16 @@ import (
 	"sync"
 	"sync/atomic"
 
-	abci "github.com/airchains-network/tracksbft/abci/types"
-	"github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/libs/clist"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtmath "github.com/airchains-network/tracksbft/libs/math"
-	cmtsync "github.com/airchains-network/tracksbft/libs/sync"
-	"github.com/airchains-network/tracksbft/mempool"
-	"github.com/airchains-network/tracksbft/p2p"
-	"github.com/airchains-network/tracksbft/proxy"
-	"github.com/airchains-network/tracksbft/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	"github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/libs/clist"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtmath "github.com/tendermint/tendermint/libs/math"
+	cmtsync "github.com/tendermint/tendermint/libs/sync"
+	"github.com/tendermint/tendermint/mempool"
+	"github.com/tendermint/tendermint/p2p"
+	"github.com/tendermint/tendermint/proxy"
+	"github.com/tendermint/tendermint/types"
 )
 
 // CListMempool is an ordered in-memory pool for transactions before they are
@@ -626,7 +626,7 @@ func (mem *CListMempool) Update(
 		//   101 -> 102
 		// Mempool after:
 		//   100
-		// https://github.com/airchains-network/tracksbft/issues/3322.
+		// https://github.com/tendermint/tendermint/issues/3322.
 		if e, ok := mem.txsMap.Load(tx.Key()); ok {
 			mem.removeTx(tx, e.(*clist.CElement), false)
 		}

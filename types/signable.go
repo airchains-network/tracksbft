@@ -1,8 +1,8 @@
 package types
 
 import (
-	"github.com/airchains-network/tracksbft/crypto/ed25519"
-	cmtmath "github.com/airchains-network/tracksbft/libs/math"
+	"github.com/tendermint/tendermint/crypto/ed25519"
+	cmtmath "github.com/tendermint/tendermint/libs/math"
 )
 
 var (

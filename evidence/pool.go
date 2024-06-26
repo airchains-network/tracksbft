@@ -12,11 +12,11 @@ import (
 	"github.com/gogo/protobuf/proto"
 	gogotypes "github.com/gogo/protobuf/types"
 
-	clist "github.com/airchains-network/tracksbft/libs/clist"
-	"github.com/airchains-network/tracksbft/libs/log"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	sm "github.com/airchains-network/tracksbft/state"
-	"github.com/airchains-network/tracksbft/types"
+	clist "github.com/tendermint/tendermint/libs/clist"
+	"github.com/tendermint/tendermint/libs/log"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	sm "github.com/tendermint/tendermint/state"
+	"github.com/tendermint/tendermint/types"
 )
 
 const (

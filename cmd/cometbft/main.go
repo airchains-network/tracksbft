@@ -4,11 +4,11 @@ import (
 	"os"
 	"path/filepath"
 
-	cmd "github.com/airchains-network/tracksbft/cmd/cometbft/commands"
-	"github.com/airchains-network/tracksbft/cmd/cometbft/commands/debug"
-	cfg "github.com/airchains-network/tracksbft/config"
-	"github.com/airchains-network/tracksbft/libs/cli"
-	nm "github.com/airchains-network/tracksbft/node"
+	cmd "github.com/tendermint/tendermint/cmd/cometbft/commands"
+	"github.com/tendermint/tendermint/cmd/cometbft/commands/debug"
+	cfg "github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/libs/cli"
+	nm "github.com/tendermint/tendermint/node"
 )
 
 func main() {

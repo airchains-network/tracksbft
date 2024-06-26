@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	auto "github.com/airchains-network/tracksbft/libs/autofile"
-	cmtos "github.com/airchains-network/tracksbft/libs/os"
+	auto "github.com/tendermint/tendermint/libs/autofile"
+	cmtos "github.com/tendermint/tendermint/libs/os"
 )
 
 const Version = "0.0.1"

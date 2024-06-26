@@ -5,9 +5,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	cmtnet "github.com/airchains-network/tracksbft/libs/net"
-	p2pconn "github.com/airchains-network/tracksbft/p2p/conn"
+	"github.com/tendermint/tendermint/crypto"
+	cmtnet "github.com/tendermint/tendermint/libs/net"
+	p2pconn "github.com/tendermint/tendermint/p2p/conn"
 )
 
 // Socket errors.

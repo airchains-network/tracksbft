@@ -1,11 +1,11 @@
 package v0
 
 import (
-	"github.com/airchains-network/tracksbft/abci/example/kvstore"
-	"github.com/airchains-network/tracksbft/config"
-	mempl "github.com/airchains-network/tracksbft/mempool"
-	mempoolv0 "github.com/airchains-network/tracksbft/mempool/v0"
-	"github.com/airchains-network/tracksbft/proxy"
+	"github.com/tendermint/tendermint/abci/example/kvstore"
+	"github.com/tendermint/tendermint/config"
+	mempl "github.com/tendermint/tendermint/mempool"
+	mempoolv0 "github.com/tendermint/tendermint/mempool/v0"
+	"github.com/tendermint/tendermint/proxy"
 )
 
 var mempool mempl.Mempool

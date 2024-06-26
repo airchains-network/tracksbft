@@ -17,12 +17,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	"github.com/airchains-network/tracksbft/crypto/ed25519"
-	"github.com/airchains-network/tracksbft/crypto/sr25519"
-	"github.com/airchains-network/tracksbft/libs/async"
-	cmtos "github.com/airchains-network/tracksbft/libs/os"
-	cmtrand "github.com/airchains-network/tracksbft/libs/rand"
+	"github.com/tendermint/tendermint/crypto"
+	"github.com/tendermint/tendermint/crypto/ed25519"
+	"github.com/tendermint/tendermint/crypto/sr25519"
+	"github.com/tendermint/tendermint/libs/async"
+	cmtos "github.com/tendermint/tendermint/libs/os"
+	cmtrand "github.com/tendermint/tendermint/libs/rand"
 )
 
 // Run go test -update from within this module

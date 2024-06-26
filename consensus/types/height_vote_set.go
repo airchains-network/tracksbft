@@ -6,11 +6,11 @@ import (
 	"strings"
 	"sync"
 
-	cmtjson "github.com/airchains-network/tracksbft/libs/json"
-	cmtmath "github.com/airchains-network/tracksbft/libs/math"
-	"github.com/airchains-network/tracksbft/p2p"
-	cmtproto "github.com/airchains-network/tracksbft/proto/tendermint/types"
-	"github.com/airchains-network/tracksbft/types"
+	cmtjson "github.com/tendermint/tendermint/libs/json"
+	cmtmath "github.com/tendermint/tendermint/libs/math"
+	"github.com/tendermint/tendermint/p2p"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 type RoundVoteSet struct {

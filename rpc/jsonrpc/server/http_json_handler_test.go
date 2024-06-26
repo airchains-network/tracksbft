@@ -12,8 +12,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/airchains-network/tracksbft/libs/log"
-	types "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
+	"github.com/tendermint/tendermint/libs/log"
+	types "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 )
 
 func testMux() *http.ServeMux {
@@ -33,7 +33,7 @@ func statusOK(code int) bool { return code >= 200 && code <= 299 }
 
 // Ensure that nefarious/unintended inputs to `params`
 // do not crash our RPC handlers.
-// See Issue https://github.com/airchains-network/tracksbft/issues/708.
+// See Issue https://github.com/tendermint/tendermint/issues/708.
 func TestRPCParams(t *testing.T) {
 	mux := testMux()
 	tests := []struct {

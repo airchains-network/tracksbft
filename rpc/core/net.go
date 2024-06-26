@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/airchains-network/tracksbft/p2p"
-	ctypes "github.com/airchains-network/tracksbft/rpc/core/types"
-	rpctypes "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
+	"github.com/tendermint/tendermint/p2p"
+	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 )
 
 // NetInfo returns network info.

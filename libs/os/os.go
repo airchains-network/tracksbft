@@ -8,7 +8,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/airchains-network/tracksbft/libs/log"
+	"github.com/tendermint/tendermint/libs/log"
 )
 
 type logger interface {

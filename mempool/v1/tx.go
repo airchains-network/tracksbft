@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/airchains-network/tracksbft/types"
+	"github.com/tendermint/tendermint/types"
 )
 
 // WrappedTx defines a wrapper around a raw transaction with additional metadata

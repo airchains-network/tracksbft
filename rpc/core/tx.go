@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"sort"
 
-	cmtmath "github.com/airchains-network/tracksbft/libs/math"
-	cmtquery "github.com/airchains-network/tracksbft/libs/pubsub/query"
-	ctypes "github.com/airchains-network/tracksbft/rpc/core/types"
-	rpctypes "github.com/airchains-network/tracksbft/rpc/jsonrpc/types"
-	"github.com/airchains-network/tracksbft/state/txindex/null"
-	"github.com/airchains-network/tracksbft/types"
+	cmtmath "github.com/tendermint/tendermint/libs/math"
+	cmtquery "github.com/tendermint/tendermint/libs/pubsub/query"
+	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
+	"github.com/tendermint/tendermint/state/txindex/null"
+	"github.com/tendermint/tendermint/types"
 )
 
 // Tx allows you to query the transaction results. `nil` could mean the

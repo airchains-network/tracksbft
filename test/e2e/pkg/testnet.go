@@ -11,11 +11,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/airchains-network/tracksbft/crypto"
-	"github.com/airchains-network/tracksbft/crypto/ed25519"
-	"github.com/airchains-network/tracksbft/crypto/secp256k1"
-	rpchttp "github.com/airchains-network/tracksbft/rpc/client/http"
-	mcs "github.com/airchains-network/tracksbft/test/maverick/consensus"
+	"github.com/tendermint/tendermint/crypto"
+	"github.com/tendermint/tendermint/crypto/ed25519"
+	"github.com/tendermint/tendermint/crypto/secp256k1"
+	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
+	mcs "github.com/tendermint/tendermint/test/maverick/consensus"
 )
 
 const (
