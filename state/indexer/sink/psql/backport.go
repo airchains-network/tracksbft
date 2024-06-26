@@ -92,7 +92,7 @@ func (b2 BackportTxIndexer) GetbytedataFortracks(hash []byte) ([]byte, error) {
 	panic("implement me")
 }
 
-func (b2 BackportTxIndexer) AddPod(b *txindex.Batch) error {
+func (b2 BackportTxIndexer) AddPod(b *txindex.Batch, stationType string) error {
 	//TODO implement me
 	panic("implement me")
 }

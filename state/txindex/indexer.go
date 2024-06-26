@@ -14,7 +14,7 @@ import (
 
 // TxIndexer interface defines methods to index and search transactions.
 type TxIndexer interface {
-	AddPod(b *Batch) error
+	AddPod(b *Batch, stationType string) error
 	AddBatch(b *Batch) error
 	GetbytedataFortracks(hash []byte) ([]byte, error)
 	Index(result *abci.TxResult) error

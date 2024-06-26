@@ -14,6 +14,8 @@ const (
 	subscriber = "IndexerService"
 )
 
+var tracksStationType string
+
 // IndexerService connects event bus, transaction and block indexers together in
 // order to index transactions and blocks coming from the event bus.
 type IndexerService struct {
@@ -30,8 +32,10 @@ func NewIndexerService(
 	txIdxr TxIndexer,
 	blockIdxr indexer.BlockIndexer,
 	eventBus *types.EventBus,
+	stationType string,
 	terminateOnError bool,
 ) *IndexerService {
+	tracksStationType = stationType
 
 	is := &IndexerService{txIdxr: txIdxr, blockIdxr: blockIdxr, eventBus: eventBus, terminateOnError: terminateOnError}
 	is.BaseService = *service.NewBaseService(nil, "IndexerService", is)
@@ -58,6 +62,7 @@ func (is *IndexerService) OnStart() error {
 	}
 
 	go func() {
+		is.Logger.Info("tracks pods are enabled", "tracksStationType", tracksStationType)
 		for {
 			msg := <-blockHeadersSub.Out()
 			eventDataHeader := msg.Data().(types.EventDataNewBlockHeader)
@@ -111,7 +116,7 @@ func (is *IndexerService) OnStart() error {
 			}
 
 			// index pods in database
-			if err = is.txIdxr.AddPod(batch); err != nil {
+			if err = is.txIdxr.AddPod(batch, tracksStationType); err != nil {
 				is.Logger.Error("failed to index block txs", "height", height, "err", err)
 				if is.terminateOnError {
 					if err := is.Stop(); err != nil {

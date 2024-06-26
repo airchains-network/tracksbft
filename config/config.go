@@ -305,6 +305,8 @@ func (cfg BaseConfig) ValidateBasic() error {
 type RPCConfig struct {
 	RootDir string `mapstructure:"home"`
 
+	TrackStationType string `mapstructure:"track_station_type"`
+
 	// TCP or UNIX socket address for the RPC server to listen on
 	ListenAddress string `mapstructure:"laddr"`
 
@@ -419,7 +421,7 @@ func DefaultRPCConfig() *RPCConfig {
 		CORSAllowedHeaders:     []string{"Origin", "Accept", "Content-Type", "X-Requested-With", "X-Server-Time"},
 		GRPCListenAddress:      "",
 		GRPCMaxOpenConnections: 900,
-		StationType:            "tcp",
+		TrackStationType:       "none", // evm cosmwasm svm
 
 		Unsafe:             false,
 		MaxOpenConnections: 900,
