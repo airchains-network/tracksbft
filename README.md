@@ -20,7 +20,7 @@ github.com/tendermint/tendermint => github.com/airchains-network/tracksbft v0.0.
 Alternatively, you can run the following command and then replace all `tendermint/cometbft` library imports in your blockchain project with `tracksbft`:
 
 ```bash
-go get github.com/tendermint/tendermint
+go get github.com/airchains-network/tracksbft@v0.0.1
 ```
 
 ## Minimum Requirements
